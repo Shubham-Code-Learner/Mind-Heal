@@ -1,0 +1,577 @@
+/* Hero Section */
+.meditation-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.meditation-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.meditation-hero .lead {
+    font-size: 20px;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b6cb0;
+    display: block;
+}
+
+.stat .label {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+/* Featured Programs */
+.featured-programs {
+    padding: 80px 0;
+    background: white;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-image .icon {
+    font-size: 64px;
+}
+
+.program-content {
+    padding: 24px;
+}
+
+.program-content h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.program-meta {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+    color: #4a5568;
+}
+
+/* Live Sessions */
+.live-sessions {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.session-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.session-header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.badge.live {
+    background: #f56565;
+    color: white;
+}
+
+.badge.upcoming {
+    background: #4299e1;
+    color: white;
+}
+
+.session-content {
+    padding: 24px;
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.instructor img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Meditation Library */
+.meditation-library {
+    padding: 80px 0;
+    background: white;
+}
+
+.library-filters {
+    display: flex;
+    gap: 12px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #2b6cb0;
+    color: white;
+    border-color: #2b6cb0;
+}
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+/* Expert Insights */
+.expert-insights {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.insight-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+.expert-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.expert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.read-more {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+/* Progress Tracking */
+.progress-tracking {
+    padding: 80px 0;
+    background: white;
+}
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.progress-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.progress-icon {
+    font-size: 48px;
+    color: #2b6cb0;
+    margin-bottom: 24px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+.progress {
+    height: 100%;
+    background: #2b6cb0;
+    border-radius: 4px;
+}
+
+/* Community Section */
+.community {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.community-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.community-icon {
+    font-size: 48px;
+    color: #2b6cb0;
+    margin-bottom: 24px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+    background: white;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.faq-item {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+/* Quick Meditation Player */
+.quick-meditation {
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.meditation-player {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.current-session h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.play-btn, .volume-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #2b6cb0;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover, .volume-btn:hover {
+    background-color: rgba(43, 108, 176, 0.1);
+}
+
+.progress-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #2b6cb0;
+    border-radius: 4px;
+    transition: width 0.1s linear;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+/* Notification System */
+.notification {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #2b6cb0;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Meditation Library */
+.meditation-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.meditation-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image .icon {
+    font-size: 64px;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-meta {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+    color: #4a5568;
+}
+
+/* Progress Tracking */
+.progress-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.progress-icon {
+    font-size: 48px;
+    color: #2b6cb0;
+    margin-bottom: 24px;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.achievements .badge {
+    background: #2b6cb0;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.newsletter-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-content h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.newsletter-content p {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 32px;
+}
+
+.input-group {
+    display: flex;
+    gap: 16px;
+}
+
+.input-group .form-control {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-group .form-control:focus {
+    border-color: #2b6cb0;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meditation-hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .programs-grid,
+    .sessions-grid,
+    .library-grid,
+    .insights-grid,
+    .progress-grid,
+    .community-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-meditation {
+        padding: 24px 0;
+    }
+
+    .meditation-player {
+        padding: 24px;
+    }
+
+    .audio-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .play-btn, .volume-btn {
+        align-self: center;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .notification {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+    }
+} 

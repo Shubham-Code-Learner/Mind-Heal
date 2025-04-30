@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mind Heal - Relaxing Music & Meditation Sounds">
+    <title>Mind Heal - Music & Sounds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg"> <span style="font-weight: 500;">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="#try" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="music-hero">
+        <div class="container">
+            <h1>Relaxing Music & Sounds</h1>
+            <p>Discover calming music, meditation sounds, and nature ambience to support your mental wellness journey.</p>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search music..." class="search-input">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Meditation</button>
+                    <button class="filter-btn">Sleep</button>
+                    <button class="filter-btn">Nature</button>
+                    <button class="filter-btn">Focus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Playlists -->
+    <section class="featured-playlists">
+        <div class="container">
+            <h2>Featured Playlists</h2>
+            <div class="playlists-grid">
+                <div class="playlist-card">
+                    <div class="playlist-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Calming Piano">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-content">
+                        <h3>Calming Piano</h3>
+                        <p>Relaxing piano melodies for meditation and focus</p>
+                        <div class="playlist-meta">
+                            <span>2.5 hours</span>
+                            <span>24 tracks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Nature Sounds">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-content">
+                        <h3>Nature Sounds</h3>
+                        <p>Soothing sounds of nature for relaxation</p>
+                        <div class="playlist-meta">
+                            <span>3 hours</span>
+                            <span>18 tracks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Meditation Music">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-content">
+                        <h3>Meditation Music</h3>
+                        <p>Deep meditation background music</p>
+                        <div class="playlist-meta">
+                            <span>2 hours</span>
+                            <span>12 tracks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Rain Sounds">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-content">
+                        <h3>Rain Sounds</h3>
+                        <p>Gentle rain sounds for sleep and relaxation</p>
+                        <div class="playlist-meta">
+                            <span>8 hours</span>
+                            <span>6 tracks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Zen Garden">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-content">
+                        <h3>Zen Garden</h3>
+                        <p>Peaceful Japanese garden meditation music</p>
+                        <div class="playlist-meta">
+                            <span>1.5 hours</span>
+                            <span>8 tracks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="playlist-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Ocean Waves">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-content">
+                        <h3>Ocean Waves</h3>
+                        <p>Calming ocean waves for deep sleep</p>
+                        <div class="playlist-meta">
+                            <span>10 hours</span>
+                            <span>4 tracks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tracks -->
+    <section class="popular-tracks">
+        <div class="container">
+            <h2>Popular Tracks</h2>
+            <div class="tracks-grid">
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Ambient Sounds">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="track-content">
+                        <h3>Ambient Sounds</h3>
+                        <p>Peaceful ambient music for focus and relaxation</p>
+                        <div class="track-meta">
+                            <span>45 min</span>
+                            <span>1.2M views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Calming Piano">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="track-content">
+                        <h3>Calming Piano</h3>
+                        <p>Relaxing piano melodies for meditation</p>
+                        <div class="track-meta">
+                            <span>1 hour</span>
+                            <span>850K views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="https://i.ytimg.com/vi/1ZYbU82GVz4/maxresdefault.jpg" alt="Nature Sounds">
+                        <div class="play-button" onclick="playVideo('1ZYbU82GVz4')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="track-content">
+                        <h3>Nature Sounds</h3>
+                        <p>Soothing sounds of nature</p>
+                        <div class="track-meta">
+                            <span>30 min</span>
+                            <span>720K views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="music-categories">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="switchCategory('meditation')">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Meditation</h3>
+                    <p>Music for mindfulness and meditation</p>
+                </div>
+
+                <div class="category-card" onclick="switchCategory('sleep')">
+                    <div class="category-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Sleep</h3>
+                    <p>Soothing sounds for better sleep</p>
+                </div>
+
+                <div class="category-card" onclick="switchCategory('nature')">
+                    <div class="category-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Nature</h3>
+                    <p>Natural sounds and ambience</p>
+                </div>
+
+                <div class="category-card" onclick="switchCategory('focus')">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Focus</h3>
+                    <p>Music for concentration and work</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Player -->
+    <div class="youtube-player-container">
+        <div id="player"></div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Mind Heal Assistant</h3>
+            <button class="toggle-btn">-</button>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages">
+                <div class="message bot">
+                    Hello! I'm your mental wellness assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="Article.html">Articles</a></li>
+                        <li><a href="#meditation">Meditation</a></li>
+                        <li><a href="#therapy">Therapy</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Have questions? We're here to help.</p>
+                    <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mind Heal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Load YouTube API
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: '',
+                playerVars: {
+                    'autoplay': 0,
+                    'controls': 1,
+                    'rel': 0
+                }
+            });
+        }
+
+        function playVideo(videoId) {
+            player.loadVideoById(videoId);
+            player.playVideo();
+        }
+
+        function switchCategory(category) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show the selected category content
+            const selectedContent = document.getElementById(category + '-content');
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+        }
+
+        // Chatbot functionality
+        const chatbotContainer = document.querySelector('.chatbot-container');
+        const chatbotBody = document.querySelector('.chatbot-body');
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const chatInput = document.getElementById('chat-input');
+        const messagesContainer = document.querySelector('.chatbot-messages');
+        const sendButton = document.querySelector('.chatbot-input button');
+
+        // Initialize chatbot state
+        let isMinimized = false;
+
+        // Toggle chatbot visibility
+        toggleBtn.addEventListener('click', () => {
+            isMinimized = !isMinimized;
+            chatbotBody.style.display = isMinimized ? 'none' : 'flex';
+            toggleBtn.textContent = isMinimized ? '+' : '-';
+        });
+
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                addMessage(message, 'user');
+                chatInput.value = '';
+
+                // Show typing indicator
+                const typingIndicator = addTypingIndicator();
+
+                // Simulate bot response (you can replace this with actual API calls)
+                setTimeout(() => {
+                    // Remove typing indicator
+                    typingIndicator.remove();
+                    
+                    // Get and add bot response
+                    const botResponse = getBotResponse(message);
+                    addMessage(botResponse, 'bot');
+                    
+                    // Scroll to bottom
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        // Add message to chat
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.textContent = text;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            return messageDiv;
+        }
+
+        // Add typing indicator
+        function addTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot typing';
+            typingDiv.innerHTML = '<span></span><span></span><span></span>';
+            messagesContainer.appendChild(typingDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            return typingDiv;
+        }
+
+        // Get bot response (enhanced with more detailed responses)
+        function getBotResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            // Handle numbered options (1-5)
+            if (lowerMessage.includes('1') || lowerMessage.includes('learn about mental wellness')) {
+                return "You can learn about mental wellness in several ways:\n\n1. Click on 'Articles' in the top navigation bar to access our mental health resources\n2. Visit our 'About' section for wellness fundamentals\n3. Check out our expert-written articles at www.yourwebsite.com/Article.html\n\nOur articles cover:\n• Mental health basics\n• Wellness strategies\n• Self-care techniques\n• Expert insights\n• Latest research\n\nWould you like me to suggest a specific topic to start with?";
+            } else if (lowerMessage.includes('2') || lowerMessage.includes('try a meditation')) {
+                return "You can access our meditation sessions through:\n\n1. Click on 'Meditation' in the top navigation bar\n2. Or scroll down to the Meditation section on the homepage\n\nWe offer:\n• Quick 5-minute sessions\n• Guided meditations\n• Breathing exercises\n• Body scan meditations\n• Mindfulness practices\n\nWould you like to start with a beginner-friendly meditation?";
+            } else if (lowerMessage.includes('3') || lowerMessage.includes('find relaxing music')) {
+                return "You're in the right place! You can find relaxing music through:\n\n1. Click on 'Music' in the top navigation bar (you're here!)\n2. Browse our categories below:\n   • Meditation music\n   • Sleep sounds\n   • Nature ambience\n   • Focus music\n\nWhat type of relaxing music would you like to try first?";
+            } else if (lowerMessage.includes('4') || lowerMessage.includes('track your mood')) {
+                return "You can access our Mood Tracker through:\n\n1. Click on 'Mood Tracker' in the top navigation bar\n2. Or find it in your dashboard after logging in\n\nThe Mood Tracker offers:\n• Daily mood logging\n• Emotion patterns\n• Progress visualization\n• Personalized insights\n• Wellness recommendations\n\nWould you like to start tracking your mood journey?";
+            } else if (lowerMessage.includes('5') || lowerMessage.includes('get personalized support')) {
+                return "Get personalized support through our AI-Care feature:\n\n1. Click on 'AI-Care' in the top navigation bar\n2. Or use this chat interface (you're already here!)\n\nOur AI support provides:\n• 24/7 emotional support\n• Personalized guidance\n• Coping strategies\n• Resource recommendations\n• Progress tracking\n\nWhat kind of support are you looking for today?";
+            } else if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
+                return "Hello! 👋 I'm your Mind Heal wellness assistant. I'm here to support your mental wellness journey. Would you like to:\n\n1. Learn about mental wellness\n2. Try a meditation session\n3. Find relaxing music\n4. Track your mood\n5. Get personalized support\n\nJust type the number or option you're interested in!";
+            } else if (lowerMessage.includes('article') || lowerMessage.includes('read') || lowerMessage.includes('learn')) {
+                return "You can find our Articles section in two ways:\n\n1. Click on 'Articles' in the top navigation bar\n2. Or visit: www.yourwebsite.com/Article.html\n\nHere you'll discover:\n• Expert-written articles on mental health\n• Research-backed wellness strategies\n• Personal growth guides\n• Latest mental health insights\n• Success stories from our community\n\nWould you like to explore articles on a specific topic?";
+            } else if (lowerMessage.includes('meditation') || lowerMessage.includes('mindful')) {
+                return "Our Meditation section is easily accessible:\n\n1. Click on 'Meditation' in the top navigation bar\n2. Or scroll down to the Meditation section on the homepage\n\nWe offer:\n• Guided meditation sessions (5-30 minutes)\n• Breathing exercises for stress relief\n• Mindfulness practices for daily life\n• Body scan meditations for relaxation\n• Quick meditation breaks for busy schedules\n\nWould you like to try a short meditation session?";
+            } else if (lowerMessage.includes('sleep') || lowerMessage.includes('rest')) {
+                return "Access our Sleep resources in two ways:\n\n1. Click on 'Sleep' in the top navigation bar\n2. Or scroll down to the Sleep section on the homepage\n\nWe provide:\n• Sleep-inducing music and sounds\n• Guided sleep meditations\n• Sleep hygiene tips from experts\n• Bedtime routine suggestions\n• Sleep tracking tools\n\nWould you like to try our sleep sounds or learn more about improving your sleep quality?";
+            } else if (lowerMessage.includes('ai') || lowerMessage.includes('care') || lowerMessage.includes('support')) {
+                return "Our AI-Care feature is available:\n\n1. Click on 'AI-Care' in the top navigation bar\n2. Or look for the floating chatbot icon on any page\n\nHere's what you can expect:\n• 24/7 emotional support\n• Personalized wellness recommendations\n• Progress tracking and insights\n• Customized mental health exercises\n• Supportive conversations\n\nWould you like to start a session with our AI assistant?";
+            } else if (lowerMessage.includes('music') || lowerMessage.includes('sound') || lowerMessage.includes('listen')) {
+                return "You're already in our Music section! 🎵 You can access it anytime by:\n\n1. Clicking on 'Music' in the top navigation bar\n2. Or visiting: www.yourwebsite.com/music.html\n\nHere you can find:\n• Meditation music for mindfulness\n• Nature sounds for relaxation\n• White noise for focus\n• Sleep-inducing tracks\n• Stress relief music\n\nWhat kind of music would help you right now?";
+            } else if (lowerMessage.includes('mood') || lowerMessage.includes('track') || lowerMessage.includes('feel')) {
+                return "The Mood Tracker is easily accessible:\n\n1. Click on 'Mood Tracker' in the top navigation bar\n2. Or look for the mood tracking widget on your dashboard\n\nFeatures include:\n• Daily mood logging with insights\n• Pattern analysis and trends\n• Personalized recommendations\n• Progress tracking\n• Wellness correlations\n\nWould you like to start tracking your mood today?";
+            } else if (lowerMessage.includes('plan') || lowerMessage.includes('subscription') || lowerMessage.includes('price')) {
+                return "Our Plans section is available:\n\n1. Click on 'Plans' in the top navigation bar\n2. Or scroll down to the Plans section on the homepage\n\nWe offer:\n• Free trial with basic features\n• Premium plan with full access\n• Family plans for shared wellness\n• Student discounts\n• Corporate wellness packages\n\nWould you like to learn more about our plans?";
+            } else if (lowerMessage.includes('contact') || lowerMessage.includes('help') || lowerMessage.includes('support')) {
+                return "Contact us in multiple ways:\n\n1. Click on 'Contact' in the top navigation bar\n2. Or visit: www.yourwebsite.com/contact.html\n3. Or use the contact form at the bottom of any page\n\nSupport options:\n• 24/7 support email\n• Help center with FAQs\n• Live chat with experts\n• Community forum\n• Emergency support\n\nHow can we assist you today?";
+            } else if (lowerMessage.includes('about') || lowerMessage.includes('who') || lowerMessage.includes('what')) {
+                return "Learn about us through:\n\n1. Click on 'About' in the top navigation bar\n2. Or visit: www.yourwebsite.com/About.html\n\nDiscover:\n• Our mission and values\n• Expert team members\n• Success stories\n• Research and development\n• Community impact\n\nWhat would you like to know about us?";
+            } else if (lowerMessage.includes('login') || lowerMessage.includes('account') || lowerMessage.includes('sign')) {
+                return "Access your account through:\n\n1. Click on 'Log in' in the top navigation bar\n2. Or use the login button in the top-right corner\n3. Or visit: www.yourwebsite.com/login\n\nFeatures:\n• Personalized dashboard\n• Progress tracking\n• Saved preferences\n• Custom settings\n• Subscription management\n\nWould you like to log in to your account?";
+            } else if (lowerMessage.includes('thank') || lowerMessage.includes('thanks')) {
+                return "You're welcome! 😊 Remember, I'm here whenever you need support on your mental wellness journey. Is there anything else I can help you with today?";
+            } else if (lowerMessage.includes('bye') || lowerMessage.includes('goodbye')) {
+                return "Goodbye! 👋 Take care of yourself, and remember to practice self-care. Feel free to return anytime you need support on your mental wellness journey.";
+            } else {
+                return "I'm here to support your mental wellness journey! 🌟 You can explore our features through the navigation bar at the top of the page. Would you like to:\n\n1. Learn about mental wellness\n2. Try a meditation session\n3. Find relaxing music\n4. Track your mood\n5. Get personalized support\n\nWhat interests you most?";
+            }
+        }
+
+        // Handle Enter key press
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Handle send button click
+        sendButton.addEventListener('click', sendMessage);
+
+        // Focus input when clicking anywhere in the chat
+        chatbotContainer.addEventListener('click', () => {
+            chatInput.focus();
+        });
+    </script>
+</body>
+</html> 

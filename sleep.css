@@ -1,0 +1,609 @@
+/* Hero Section */
+.sleep-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.sleep-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.sleep-hero .lead {
+    font-size: 20px;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b6cb0;
+    display: block;
+}
+
+.stat .label {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+/* Sleep Tracker */
+.sleep-tracker {
+    padding: 80px 0;
+    background: white;
+}
+
+.tracker-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tracker-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sleep-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+}
+
+.stat-icon {
+    font-size: 32px;
+    color: #2b6cb0;
+    margin-bottom: 16px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.tracker-controls {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Sleep Programs */
+.sleep-programs {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-image .icon {
+    font-size: 64px;
+}
+
+.program-content {
+    padding: 24px;
+}
+
+.program-meta {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+    color: #4a5568;
+}
+
+/* Sleep Sounds */
+.sleep-sounds {
+    padding: 80px 0;
+    background: white;
+}
+
+.sounds-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.sound-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.sound-card:hover {
+    transform: translateY(-5px);
+}
+
+.sound-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound-image .icon {
+    font-size: 64px;
+}
+
+.sound-content {
+    padding: 24px;
+}
+
+.sound-meta {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+    color: #4a5568;
+}
+
+/* Sleep Tips */
+.sleep-tips {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.tip-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tip-icon {
+    font-size: 32px;
+    color: #2b6cb0;
+    margin-bottom: 24px;
+}
+
+.tip-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tip-card li {
+    padding: 8px 0;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tip-card li:before {
+    content: "•";
+    color: #2b6cb0;
+    font-size: 20px;
+}
+
+/* Sleep Articles */
+.sleep-articles {
+    padding: 80px 0;
+    background: white;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.article-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 24px;
+}
+
+/* Sleep Calculator */
+.sleep-calculator {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.calculator-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.input-group label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.input-group input[type="time"],
+.input-group select,
+.input-group input[type="email"] {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.input-group input[type="time"]:focus,
+.input-group select:focus,
+.input-group input[type="email"]:focus {
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+    outline: none;
+}
+
+.calculator-card button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.result {
+    text-align: center;
+    padding: 24px;
+    background: #f8f9fa;
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.bedtime {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin: 16px 0 0;
+}
+
+/* Sleep Community */
+.sleep-community {
+    padding: 80px 0;
+    background: white;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.community-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.community-icon {
+    font-size: 48px;
+    color: #2b6cb0;
+    margin-bottom: 24px;
+}
+
+/* FAQ Section */
+.sleep-faq {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 80px 0;
+    background: white;
+}
+
+.newsletter-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.newsletter-content h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.newsletter-content p {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 32px;
+}
+
+.newsletter .input-group {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.newsletter .input-group input[type="email"] {
+    flex: 1;
+    min-height: 56px;
+    font-size: 18px;
+}
+
+.newsletter .input-group button {
+    padding: 0 32px;
+    font-size: 18px;
+    font-weight: 600;
+    min-height: 56px;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sleep-hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .programs-grid,
+    .sounds-grid,
+    .tips-grid,
+    .articles-grid,
+    .community-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-card {
+        padding: 24px;
+        margin: 0 15px;
+    }
+
+    .newsletter .input-group {
+        flex-direction: column;
+    }
+
+    .newsletter .input-group button {
+        width: 100%;
+    }
+
+    .input-group input[type="time"],
+    .input-group select,
+    .input-group input[type="email"] {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    .tracker-controls {
+        flex-direction: column;
+    }
+}
+
+/* Enhanced Sleep Calculator Styles */
+.cycle-info {
+    margin-top: 16px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.cycle-info p {
+    margin: 8px 0;
+    color: #4a5568;
+}
+
+/* Enhanced Newsletter Styles */
+.privacy-notice {
+    margin-top: 12px;
+    text-align: center;
+    color: #718096;
+}
+
+.privacy-notice a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+.privacy-notice a:hover {
+    text-decoration: underline;
+}
+
+/* Enhanced Notification Styles */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(100px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    transform: translateY(0);
+}
+
+.notification.success {
+    border-left: 4px solid #48bb78;
+}
+
+.notification.error {
+    border-left: 4px solid #e53e3e;
+}
+
+.notification i {
+    margin-right: 8px;
+}
+
+/* Loading State Styles */
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.fa-spinner {
+    margin-right: 8px;
+}
+
+.input-group select.large-select {
+    width: 100%;
+    height: 56px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.input-group select.large-select:focus {
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+    outline: none;
+}
+
+.input-group select.large-select:hover {
+    border-color: #2b6cb0;
+}
+
+/* Remove default select arrow in IE */
+.input-group select.large-select::-ms-expand {
+    display: none;
+}
+
+/* Ensure consistent height across browsers */
+@-moz-document url-prefix() {
+    .input-group select.large-select {
+        text-indent: 0.01px;
+        text-overflow: '';
+        padding-right: 40px;
+    }
+} 

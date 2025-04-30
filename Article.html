@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mind Heal - Mental Wellness Articles & Resources">
+    <title>Mind Heal - Articles & Resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Article.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg"> <span style="font-weight: 500;">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="#try" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="articles-hero">
+        <div class="container">
+            <h1>Mental Wellness Articles & Resources</h1>
+            <p>Discover expert insights, practical tips, and evidence-based strategies for your mental health journey.</p>
+            <div class="search-container">
+                <div class="search-wrapper">
+                <input type="text" placeholder="Search articles..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                </div>
+                <div class="search-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Mindfulness</button>
+                    <button class="filter-btn">Sleep</button>
+                    <button class="filter-btn">Stress</button>
+                    <button class="filter-btn">Anxiety</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <h2>Featured Articles</h2>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <a href="meet-ebb.html" class="article-link">
+                        <div class="article-image">
+                            <img src="Images/sky.jpg" alt="Meditation Practice">
+                            <div class="article-badge">Featured</div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Meditation</span>
+                            <h3>The Power of Mindful Meditation</h3>
+                            <p>Discover how daily meditation can transform your mental well-being and reduce stress.</p>
+                            <div class="article-meta">
+                                <span>By Dr. Sarah Chen</span>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="article-actions">
+                        <button class="save-btn">Save</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <a href="mindful-families.html" class="article-link">
+                        <div class="article-image">
+                            <img src="Images/stars.jpg" alt="Sleep Quality">
+                            <div class="article-badge">Popular</div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Sleep</span>
+                            <h3>Improving Sleep Quality Naturally</h3>
+                            <p>Learn effective techniques to enhance your sleep patterns and wake up refreshed.</p>
+                            <div class="article-meta">
+                                <span>By Dr. Michael Johnson</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="article-actions">
+                        <button class="save-btn">Save</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <a href="politics-without-panic.html" class="article-link">
+                        <div class="article-image">
+                            <img src="Images/back.jpg" alt="Stress Management">
+                            <div class="article-badge">New</div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Stress</span>
+                            <h3>Managing Workplace Stress</h3>
+                            <p>Practical strategies to handle stress in professional environments effectively.</p>
+                            <div class="article-meta">
+                                <span>By Dr. Lisa Thompson</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="article-actions">
+                        <button class="save-btn">Save</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <a href="mind-heal-xr.html" class="article-link">
+                        <div class="article-image">
+                            <img src="Images/background1.jpeg" alt="Anxiety Relief">
+                            <div class="article-badge">Featured</div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Anxiety</span>
+                            <h3>Understanding and Managing Anxiety</h3>
+                            <p>Comprehensive guide to recognizing and coping with anxiety disorders.</p>
+                            <div class="article-meta">
+                                <span>By Dr. Priya Sharma</span>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="article-actions">
+                        <button class="save-btn">Save</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <a href="mindful-families.html" class="article-link">
+                        <div class="article-image">
+                            <img src="Images/background2.jpeg" alt="Healthy Relationships">
+                            <div class="article-badge">Popular</div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Relationships</span>
+                            <h3>Building Healthy Relationships</h3>
+                            <p>Essential tips for maintaining strong and supportive personal connections.</p>
+                            <div class="article-meta">
+                                <span>By Dr. Rachel Adams</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="article-actions">
+                        <button class="save-btn">Save</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <a href="meet-ebb.html" class="article-link">
+                        <div class="article-image">
+                            <img src="Images/backMain.jpeg" alt="Happiness Science">
+                            <div class="article-badge">New</div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Wellness</span>
+                            <h3>The Science of Happiness</h3>
+                            <p>Exploring the psychology behind happiness and how to cultivate it daily.</p>
+                            <div class="article-meta">
+                                <span>By Dr. James Wilson</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="article-actions">
+                        <button class="save-btn">Save</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Articles -->
+    <section class="trending-articles">
+        <div class="container">
+            <h2>Trending Now</h2>
+            <div class="trending-slider">
+                <div class="trending-card">
+                    <div class="trending-rank">1</div>
+                    <div class="trending-content">
+                        <h3>The Power of Gratitude Journaling</h3>
+                        <p>Learn how daily gratitude practice can transform your mental well-being.</p>
+                        <div class="trending-meta">
+                            <span class="author">Jaya Kishori</span>
+                            <span class="views">2.5k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <div class="trending-rank">2</div>
+                    <div class="trending-content">
+                        <h3>Digital Detox: Reclaiming Your Mental Space</h3>
+                        <p>Strategies for reducing screen time and improving mental clarity.</p>
+                        <div class="trending-meta">
+                            <span class="author">Premanand Maharaj</span>
+                            <span class="views">2.1k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <div class="trending-rank">3</div>
+                    <div class="trending-content">
+                        <h3>Mindful Eating for Emotional Well-being</h3>
+                        <p>How to develop a healthier relationship with food and emotions.</p>
+                        <div class="trending-meta">
+                            <span class="author">Bageshwar Dham</span>
+                            <span class="views">1.8k views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Insights -->
+    <section class="expert-insights">
+        <div class="container">
+            <h2>Expert Insights</h2>
+            <div class="expert-grid">
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <img src="Images/prmanamnd.jpg" alt="Dr. Paramand Singh">
+                    </div>
+                    <div class="expert-content">
+                        <h3>Dr. Paramand Singh</h3>
+                        <p class="expert-title">Clinical Psychologist</p>
+                        <p class="expert-bio">Specializing in cognitive behavioral therapy and mindfulness-based interventions.</p>
+                        <div class="expert-articles">
+                            <h4>Latest Articles</h4>
+                            <ul>
+                                <li><a href="#">Understanding Anxiety Disorders</a></li>
+                                <li><a href="#">The Role of Therapy in Modern Life</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <img src="Images/jayaKishori.jpg" alt="Jaya Kishori">
+                    </div>
+                    <div class="expert-content">
+                        <h3>Jaya Kishori</h3>
+                        <p class="expert-title">Mindfulness Coach</p>
+                        <p class="expert-bio">Expert in meditation techniques and spiritual well-being.</p>
+                        <div class="expert-articles">
+                            <h4>Latest Articles</h4>
+                            <ul>
+                                <li><a href="#">Meditation for Beginners</a></li>
+                                <li><a href="#">Finding Inner Peace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <img src="Images/bagheswar.jpg" alt="Bageshwar Dham">
+                    </div>
+                    <div class="expert-content">
+                        <h3>Bageshwar Dham</h3>
+                        <p class="expert-title">Spiritual Guide</p>
+                        <p class="expert-bio">Renowned spiritual leader specializing in traditional healing practices.</p>
+                        <div class="expert-articles">
+                            <h4>Latest Articles</h4>
+                            <ul>
+                                <li><a href="#">Spiritual Healing for Modern Life</a></li>
+                                <li><a href="#">Ancient Wisdom for Today's Challenges</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources">
+        <div class="container">
+            <h2>Free Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Guided Meditation Scripts</h3>
+                    <p>Download our collection of guided meditation scripts for personal use.</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Wellness Planner</h3>
+                    <p>Printable planner to track your mental wellness journey.</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                        </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Mood Tracker</h3>
+                    <p>Track your emotions and identify patterns in your mental well-being.</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Mental Wellness Insights</h2>
+                <p>Subscribe to our newsletter for the latest articles, tips, and resources delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="privacy-policy" required>
+                        <label for="privacy-policy">I agree to receive emails and accept the privacy policy</label>
+                    </div>
+                </form>
+                <div class="social-share">
+                    <p>Share with friends:</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="#meditation">Meditation</a></li>
+                        <li><a href="#therapy">Therapy</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Have questions? We're here to help.</p>
+                    <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mind Heal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.article-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-card {
+    position: relative;
+}
+
+.article-actions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0 0 8px 8px;
+}
+</style>

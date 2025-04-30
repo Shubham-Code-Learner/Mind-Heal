@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mind Heal - Professional Sleep Health & Improvement Resources">
+    <title>Sleep Health | Mind Heal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sleep.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg"> <span style="font-weight: 500;">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles & Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="#try" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sleep-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Transform Your Sleep Quality</h1>
+                    <p class="lead">Discover science-backed techniques and personalized sleep solutions to improve your sleep quality and overall well-being.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="number">85%</span>
+                            <span class="label">Improved Sleep</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">500K+</span>
+                            <span class="label">Users Helped</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">30+</span>
+                            <span class="label">Sleep Experts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_0skurerf.json" background="transparent" speed="1" style="width: 100%; height: 400px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Tracker -->
+    <section class="sleep-tracker">
+        <div class="container">
+            <div class="tracker-card">
+                <h2>Sleep Tracker</h2>
+                <div class="tracker-content">
+                    <div class="sleep-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <h3>Sleep Duration</h3>
+                            <p class="stat-value" id="sleepDuration">7h 30m</p>
+                            <p class="stat-label">Last Night</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Sleep Quality</h3>
+                            <p class="stat-value" id="sleepQuality">85%</p>
+                            <p class="stat-label">Average Score</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3>Consistency</h3>
+                            <p class="stat-value" id="sleepConsistency">21 days</p>
+                            <p class="stat-label">Current Streak</p>
+                        </div>
+                    </div>
+                    <div class="tracker-controls">
+                        <button class="btn btn-primary" onclick="startSleepTracking()">
+                            <i class="fas fa-play"></i> Start Tracking
+                        </button>
+                        <button class="btn btn-outline-primary" onclick="viewSleepHistory()">
+                            <i class="fas fa-history"></i> View History
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Programs -->
+    <section class="sleep-programs">
+        <div class="container">
+            <h2>Sleep Improvement Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card" onclick="startProgram('insomnia')">
+                    <div class="program-image" style="background: linear-gradient(45deg, #FF8A00, #FF5630);">
+                        <div class="icon">🌙</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Insomnia Relief</h3>
+                        <p>Overcome sleep difficulties with our 14-day program</p>
+                        <div class="program-meta">
+                            <span><i class="fas fa-clock"></i> 14 days</span>
+                            <span><i class="fas fa-level-up-alt"></i> All Levels</span>
+                        </div>
+                        <button class="btn btn-primary">Start Program</button>
+                    </div>
+                </div>
+                <div class="program-card" onclick="startProgram('circadian')">
+                    <div class="program-image" style="background: linear-gradient(45deg, #4EA8DE, #56CCF2);">
+                        <div class="icon">⏰</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Circadian Reset</h3>
+                        <p>Fix your sleep schedule and improve sleep timing</p>
+                        <div class="program-meta">
+                            <span><i class="fas fa-clock"></i> 21 days</span>
+                            <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                        </div>
+                        <button class="btn btn-primary">Start Program</button>
+                    </div>
+                </div>
+                <div class="program-card" onclick="startProgram('deep')">
+                    <div class="program-image" style="background: linear-gradient(45deg, #9333EA, #7C3AED);">
+                        <div class="icon">💤</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Deep Sleep</h3>
+                        <p>Enhance deep sleep quality and duration</p>
+                        <div class="program-meta">
+                            <span><i class="fas fa-clock"></i> 30 days</span>
+                            <span><i class="fas fa-level-up-alt"></i> Advanced</span>
+                        </div>
+                        <button class="btn btn-primary">Start Program</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Sounds -->
+    <section class="sleep-sounds">
+        <div class="container">
+            <h2>Sleep Sounds & Music</h2>
+            <div class="sounds-grid">
+                <div class="sound-card" onclick="playSound('rain')">
+                    <div class="sound-image" style="background: linear-gradient(45deg, #4EA8DE, #56CCF2);">
+                        <div class="icon">🌧️</div>
+                    </div>
+                    <div class="sound-content">
+                        <h3>Rain Sounds</h3>
+                        <p>Gentle rainfall for relaxation</p>
+                        <div class="sound-meta">
+                            <span><i class="fas fa-clock"></i> 8 hours</span>
+                            <span><i class="fas fa-volume-up"></i> Calming</span>
+                        </div>
+                        <button class="btn btn-primary">Play Sound</button>
+                    </div>
+                </div>
+                <div class="sound-card" onclick="playSound('waves')">
+                    <div class="sound-image" style="background: linear-gradient(45deg, #10B981, #059669);">
+                        <div class="icon">🌊</div>
+                    </div>
+                    <div class="sound-content">
+                        <h3>Ocean Waves</h3>
+                        <p>Soothing ocean sounds</p>
+                        <div class="sound-meta">
+                            <span><i class="fas fa-clock"></i> 8 hours</span>
+                            <span><i class="fas fa-volume-up"></i> Relaxing</span>
+                        </div>
+                        <button class="btn btn-primary">Play Sound</button>
+                    </div>
+                </div>
+                <div class="sound-card" onclick="playSound('white')">
+                    <div class="sound-image" style="background: linear-gradient(45deg, #9333EA, #7C3AED);">
+                        <div class="icon">🎵</div>
+                    </div>
+                    <div class="sound-content">
+                        <h3>White Noise</h3>
+                        <p>Consistent background noise</p>
+                        <div class="sound-meta">
+                            <span><i class="fas fa-clock"></i> 8 hours</span>
+                            <span><i class="fas fa-volume-up"></i> Neutral</span>
+                        </div>
+                        <button class="btn btn-primary">Play Sound</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Tips -->
+    <section class="sleep-tips">
+        <div class="container">
+            <h2>Sleep Improvement Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Sleep Environment</h3>
+                    <ul>
+                        <li>Keep room temperature between 60-67°F</li>
+                        <li>Use blackout curtains</li>
+                        <li>Invest in a comfortable mattress</li>
+                        <li>Remove electronic devices</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Diet & Nutrition</h3>
+                    <ul>
+                        <li>Avoid caffeine after 2 PM</li>
+                        <li>Limit alcohol consumption</li>
+                        <li>Eat light dinners</li>
+                        <li>Stay hydrated</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Lifestyle Habits</h3>
+                    <ul>
+                        <li>Exercise regularly</li>
+                        <li>Maintain consistent sleep schedule</li>
+                        <li>Limit screen time before bed</li>
+                        <li>Practice relaxation techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Articles -->
+    <section class="sleep-articles">
+        <div class="container">
+            <h2>Sleep Health Articles</h2>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="Images/stars.jpg" alt="Sleep Science">
+                    </div>
+                    <div class="article-content">
+                        <h3>The Science of Sleep</h3>
+                        <p>Understanding sleep cycles and their importance</p>
+                        <a href="#" class="btn btn-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="Images/background1.jpeg" alt="Sleep Disorders">
+                    </div>
+                    <div class="article-content">
+                        <h3>Common Sleep Disorders</h3>
+                        <p>Identifying and managing sleep problems</p>
+                        <a href="#" class="btn btn-link">Read More</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="Images/background2.jpeg" alt="Sleep Hygiene">
+                    </div>
+                    <div class="article-content">
+                        <h3>Sleep Hygiene Guide</h3>
+                        <p>Best practices for better sleep</p>
+                        <a href="#" class="btn btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Calculator -->
+    <section class="sleep-calculator">
+        <div class="container">
+            <div class="calculator-card">
+                <h2>Sleep Calculator</h2>
+                <div class="calculator-content">
+                    <div class="input-group">
+                        <label for="wakeTime">When do you want to wake up?</label>
+                        <input type="time" id="wakeTime" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="sleepCycles">How many sleep cycles?</label>
+                        <select id="sleepCycles" class="form-control large-select">
+                            <option value="4">4 cycles (6 hours)</option>
+                            <option value="5">5 cycles (7.5 hours)</option>
+                            <option value="6" selected>6 cycles (9 hours)</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="calculateSleep()">Calculate Bedtime</button>
+                    <div class="result" id="sleepResult">
+                        <h3>Recommended Bedtime:</h3>
+                        <p class="bedtime" id="recommendedBedtime">--:--</p>
+                        <div id="sleepCycleInfo" class="cycle-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Community -->
+    <section class="sleep-community">
+        <div class="container">
+            <h2>Join Our Sleep Community</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Support Groups</h3>
+                    <p>Connect with others working on sleep improvement</p>
+                    <button class="btn btn-primary" onclick="joinGroup()">Join Group</button>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Discussion Forum</h3>
+                    <p>Share experiences and get advice</p>
+                    <button class="btn btn-primary" onclick="joinDiscussion()">Join Discussion</button>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Sleep Challenges</h3>
+                    <p>Participate in sleep improvement challenges</p>
+                    <button class="btn btn-primary" onclick="viewChallenges()">View Challenges</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="sleep-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How much sleep do I need?</h3>
+                    <p>Most adults need 7-9 hours of sleep per night, but individual needs may vary. Use our sleep calculator to find your optimal sleep duration.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is sleep hygiene?</h3>
+                    <p>Sleep hygiene refers to habits and practices that promote good sleep quality. This includes maintaining a consistent sleep schedule, creating a comfortable sleep environment, and avoiding stimulants before bedtime.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I improve my sleep quality?</h3>
+                    <p>Improving sleep quality involves multiple factors: maintaining a regular sleep schedule, creating a comfortable sleep environment, managing stress, and adopting healthy lifestyle habits.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are sleep cycles?</h3>
+                    <p>Sleep cycles are 90-minute periods during which we progress through different sleep stages. A complete night's sleep typically includes 4-6 sleep cycles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for sleep tips and updates</p>
+                <form id="newsletterForm" onsubmit="subscribeNewsletter(event)">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                    <div class="privacy-notice">
+                        <small>By subscribing, you agree to our <a href="#">Privacy Policy</a></small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="Article.html">Mental Health Blog</a></li>
+                        <li><a href="meditation.html">Guided Meditations</a></li>
+                        <li><a href="#therapy">Therapy Sessions</a></li>
+                        <li><a href="#community">Community Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Have questions? We're here to help!</p>
+                    <button class="btn btn-outline-primary" onclick="contactSupport()">Contact Support</button>
+                </div>
+            </div>
+            <p>&copy; 2025 Mind Heal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sleep.js"></script>
+</body>
+
+</html> 

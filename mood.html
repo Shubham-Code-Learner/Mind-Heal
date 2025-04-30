@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker - Mind Heal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mood.css">
+    <!-- Add Chart.js for mood tracking charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg"> <span style="font-weight: 500;">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles & Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="#try" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mood-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Track Your Mood Journey</h1>
+                    <p>Understand your emotional patterns and improve your mental well-being with our comprehensive mood tracking tools.</p>
+                    <button class="btn btn-primary" id="startTracking" style="width: 100%;">Start Tracking</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mood-illustration">
+                        <lottie-player 
+                            src="https://assets9.lottiefiles.com/packages/lf20_M9p23l.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 400px"
+                            loop
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Tracking Section -->
+    <section class="mood-tracking">
+        <div class="container">
+            <div class="mood-form-container">
+                <h2>How are you feeling today?</h2>
+                <form id="moodForm">
+                    <div class="mood-options">
+                        <div class="mood-option" data-mood="happy">
+                            <i class="fas fa-laugh-beam"></i>
+                            <span>Happy</span>
+                        </div>
+                        <div class="mood-option" data-mood="sad">
+                            <i class="fas fa-sad-tear"></i>
+                            <span>Sad</span>
+                        </div>
+                        <div class="mood-option" data-mood="angry">
+                            <i class="fas fa-angry"></i>
+                            <span>Angry</span>
+                        </div>
+                        <div class="mood-option" data-mood="anxious">
+                            <i class="fas fa-flushed"></i>
+                            <span>Anxious</span>
+                        </div>
+                        <div class="mood-option" data-mood="calm">
+                            <i class="fas fa-smile"></i>
+                            <span>Calm</span>
+                        </div>
+                        <div class="mood-option" data-mood="tired">
+                            <i class="fas fa-tired"></i>
+                            <span>Tired</span>
+                        </div>
+                    </div>
+
+                    <div class="mood-intensity">
+                        <label>How strong is this feeling?</label>
+                        <div class="intensity-slider">
+                            <input type="range" min="1" max="10" value="5" class="slider" id="intensitySlider">
+                            <div class="intensity-labels">
+                                <span>Mild</span>
+                                <span>Moderate</span>
+                                <span>Strong</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mood-notes">
+                        <label for="notes">What's on your mind?</label>
+                        <textarea id="notes" placeholder="Share what's affecting your mood today..."></textarea>
+                    </div>
+
+                    <div class="mood-tags">
+                        <label>What's affecting your mood?</label>
+                        <div class="tags-container">
+                            <div class="tag-option">
+                                <input type="checkbox" id="work" name="tags" value="work">
+                                <label for="work">Work</label>
+                            </div>
+                            <div class="tag-option">
+                                <input type="checkbox" id="family" name="tags" value="family">
+                                <label for="family">Family</label>
+                            </div>
+                            <div class="tag-option">
+                                <input type="checkbox" id="health" name="tags" value="health">
+                                <label for="health">Health</label>
+                            </div>
+                            <div class="tag-option">
+                                <input type="checkbox" id="relationships" name="tags" value="relationships">
+                                <label for="relationships">Relationships</label>
+                            </div>
+                            <div class="tag-option">
+                                <input type="checkbox" id="weather" name="tags" value="weather">
+                                <label for="weather">Weather</label>
+                            </div>
+                            <div class="tag-option">
+                                <input type="checkbox" id="other" name="tags" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save Mood</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Insights Section -->
+    <section class="mood-insights">
+        <div class="container">
+            <h2>Your Mood Insights</h2>
+            <div class="insights-container">
+                <div class="insight-card">
+                    <canvas id="weeklyMoodChart"></canvas>
+                    <h3>Weekly Mood Pattern</h3>
+                    <p>Track your mood changes over the past week</p>
+                </div>
+                <div class="insight-card">
+                    <canvas id="factorsChart"></canvas>
+                    <h3>Mood Influencers</h3>
+                    <p>See what factors affect your mood most</p>
+                </div>
+                <div class="insight-card">
+                    <canvas id="trendChart"></canvas>
+                    <h3>Mood Trends</h3>
+                    <p>Long-term mood patterns and changes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Journal Section -->
+    <section class="mood-journal">
+        <div class="container">
+            <h2>Your Mood Journal</h2>
+            <div class="journal-entries" id="journalEntries">
+                <!-- Journal entries will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="mood-resources">
+        <div class="container">
+            <h2>Resources Based on Your Mood</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-head-side-virus"></i>
+                    <h3>Mindfulness Exercises</h3>
+                    <p>Practice mindfulness to improve your mood</p>
+                    <a href="#" class="btn btn-outline-primary">Explore</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Articles & Guides</h3>
+                    <p>Read about managing emotions</p>
+                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Mood-Boosting Music</h3>
+                    <p>Listen to curated playlists</p>
+                    <a href="#" class="btn btn-outline-primary">Listen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Mental Health Blog</a></li>
+                        <li><a href="meditation.html">Guided Meditations</a></li>
+                        <li><a href="#therapy">Therapy Sessions</a></li>
+                        <li><a href="#community">Community Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for mental wellness tips and updates.</p>
+                    <input type="email" placeholder="Enter email" class="form-control">
+                    <button class="subscribe-btn">Subscribe now</button>
+                </div>
+            </div>
+            <p>&copy; 2025 Mind Heal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="mood.js"></script>
+</body>
+</html> 

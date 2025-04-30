@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mind Heal - Professional Meditation & Mindfulness Resources">
+    <title>Meditation & Mindfulness | Mind Heal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="meditation.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg"> <span style="font-weight: 500;">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles & Resources</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="#try" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="meditation-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Transform Your Mind Through Meditation</h1>
+                    <p class="lead">Discover the power of mindfulness with our expert-guided meditation sessions, designed to help you find peace, clarity, and emotional balance.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="number">500+</span>
+                            <span class="label">Guided Sessions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">1M+</span>
+                            <span class="label">Active Meditators</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">98%</span>
+                            <span class="label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_M9p23l.json" background="transparent" speed="1" style="width: 100%; height: 400px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Meditation Player -->
+    <section class="quick-meditation">
+        <div class="container">
+            <div class="meditation-player">
+                <h2>Quick Meditation</h2>
+                <div class="player-controls">
+                    <div class="current-session">
+                        <h3>5-Minute Breathing Exercise</h3>
+                        <p>Perfect for beginners and quick stress relief</p>
+                    </div>
+                    <div class="audio-controls">
+                        <audio id="meditationAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+                        <button class="play-btn" onclick="togglePlay()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">
+                                <span class="current-time">0:00</span>
+                                <span class="duration">5:00</span>
+                            </div>
+                        </div>
+                        <button class="volume-btn" onclick="toggleMute()">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Programs -->
+    <section class="featured-programs">
+        <div class="container">
+            <h2>Featured Meditation Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card" onclick="startProgram('mindfulness')">
+                    <div class="program-image" style="background: linear-gradient(45deg, #FF8A00, #FF5630);">
+                        <div class="icon">🧘‍♀️</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Mindfulness Basics</h3>
+                        <p>Perfect for beginners, this 10-day program introduces you to the fundamentals of meditation.</p>
+                        <div class="program-meta">
+                            <span><i class="fas fa-clock"></i> 10 days</span>
+                            <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+                        </div>
+                        <button class="btn btn-primary">Start Program</button>
+                    </div>
+                </div>
+                <div class="program-card" onclick="startProgram('stress')">
+                    <div class="program-image" style="background: linear-gradient(45deg, #4EA8DE, #56CCF2);">
+                        <div class="icon">🌟</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Stress Relief</h3>
+                        <p>Learn techniques to manage stress and anxiety through guided meditation practices.</p>
+                        <div class="program-meta">
+                            <span><i class="fas fa-clock"></i> 14 days</span>
+                            <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                        </div>
+                        <button class="btn btn-primary">Start Program</button>
+                    </div>
+                </div>
+                <div class="program-card" onclick="startProgram('sleep')">
+                    <div class="program-image" style="background: linear-gradient(45deg, #9333EA, #7C3AED);">
+                        <div class="icon">🌿</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Deep Sleep</h3>
+                        <p>Meditation techniques specifically designed to improve sleep quality and duration.</p>
+                        <div class="program-meta">
+                            <span><i class="fas fa-clock"></i> 21 days</span>
+                            <span><i class="fas fa-level-up-alt"></i> All Levels</span>
+                        </div>
+                        <button class="btn btn-primary">Start Program</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Sessions -->
+    <section class="live-sessions">
+        <div class="container">
+            <h2>Live Meditation Sessions</h2>
+            <div class="sessions-grid">
+                <div class="session-card">
+                    <div class="session-header">
+                        <span class="badge live">Live Now</span>
+                        <span class="time"><i class="fas fa-clock"></i> <span class="countdown" data-time="10:00">10:00 AM EST</span></span>
+                    </div>
+                    <div class="session-content">
+                        <h3>Morning Mindfulness</h3>
+                        <p>Start your day with a 20-minute guided meditation session.</p>
+                        <div class="instructor">
+                            <img src="Images/prmanamnd.jpg" alt="Instructor">
+                            <span>Premanand Maharaj</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="joinSession('morning')">Join Session</button>
+                    </div>
+                </div>
+                <div class="session-card">
+                    <div class="session-header">
+                        <span class="badge upcoming">Upcoming</span>
+                        <span class="time"><i class="fas fa-clock"></i> <span class="countdown" data-time="14:00">2:00 PM EST</span></span>
+                    </div>
+                    <div class="session-content">
+                        <h3>Stress Relief Workshop</h3>
+                        <p>Learn practical meditation techniques for stress management.</p>
+                        <div class="instructor">
+                            <img src="Images/jayaKishori.jpg" alt="Instructor">
+                            <span>Jaya Kishori</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="setReminder('stress')">Set Reminder</button>
+                    </div>
+                </div>
+                <div class="session-card">
+                    <div class="session-header">
+                        <span class="badge upcoming">Upcoming</span>
+                        <span class="time"><i class="fas fa-clock"></i> <span class="countdown" data-time="19:00">7:00 PM EST</span></span>
+                    </div>
+                    <div class="session-content">
+                        <h3>Evening Wind Down</h3>
+                        <p>Relax and unwind with a peaceful evening meditation.</p>
+                        <div class="instructor">
+                            <img src="Images/bagheswar.jpg" alt="Instructor">
+                            <span>Bageshwar Maharaj</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="setReminder('evening')">Set Reminder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meditation Library -->
+    <section class="meditation-library">
+        <div class="container">
+            <h2>Meditation Library</h2>
+            <div class="library-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="guided">Guided</button>
+                <button class="filter-btn" data-filter="sleep">Sleep</button>
+                <button class="filter-btn" data-filter="stress">Stress</button>
+                <button class="filter-btn" data-filter="focus">Focus</button>
+                <button class="filter-btn" data-filter="anxiety">Anxiety</button>
+            </div>
+            <div class="library-grid" id="meditationGrid">
+                <!-- Meditation cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracking -->
+    <section class="progress-tracking">
+        <div class="container">
+            <h2>Track Your Meditation Journey</h2>
+            <div class="progress-grid">
+                <div class="progress-card">
+                    <div class="progress-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Daily Streak</h3>
+                    <p>Track your meditation consistency and build a daily practice</p>
+                    <div class="progress-bar">
+                        <div class="progress" id="streakProgress"></div>
+                    </div>
+                    <span class="progress-text" id="streakText">0 days streak</span>
+                </div>
+                <div class="progress-card">
+                    <div class="progress-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mindfulness Score</h3>
+                    <p>Measure your progress in developing mindfulness skills</p>
+                    <div class="progress-bar">
+                        <div class="progress" id="mindfulnessProgress"></div>
+                    </div>
+                    <span class="progress-text" id="mindfulnessText">Level 1 Mindfulness</span>
+                </div>
+                <div class="progress-card">
+                    <div class="progress-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Achievements</h3>
+                    <p>Earn badges and rewards for your meditation milestones</p>
+                    <div class="achievements" id="achievementsList">
+                        <!-- Achievements will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <h2>Join Our Meditation Community</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Sessions</h3>
+                    <p>Join live group meditation sessions with fellow practitioners</p>
+                    <button class="btn btn-primary" onclick="viewSchedule()">View Schedule</button>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Discussion Forums</h3>
+                    <p>Share experiences and learn from others in our community</p>
+                    <button class="btn btn-primary" onclick="joinDiscussion()">Join Discussion</button>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Challenges</h3>
+                    <p>Participate in meditation challenges and earn rewards</p>
+                    <button class="btn btn-primary" onclick="viewChallenges()">View Challenges</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long should I meditate each day?</h3>
+                    <p>Start with just 5-10 minutes daily and gradually increase as you become more comfortable. Consistency is more important than duration.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's the best time to meditate?</h3>
+                    <p>Morning meditation helps set a positive tone for the day, while evening meditation can help you unwind. Choose a time that works best for your schedule.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need any special equipment?</h3>
+                    <p>No special equipment is needed. Just find a quiet, comfortable space where you won't be disturbed. A meditation cushion or chair can be helpful but isn't required.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I know if I'm meditating correctly?</h3>
+                    <p>There's no "right" way to meditate. The key is to be present and non-judgmental. If your mind wanders, gently bring it back to your focus point.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for meditation tips and updates</p>
+                <form id="newsletterForm" onsubmit="subscribeNewsletter(event)">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="Article.html">Mental Health Blog</a></li>
+                        <li><a href="meditation.html">Guided Meditations</a></li>
+                        <li><a href="#therapy">Therapy Sessions</a></li>
+                        <li><a href="#community">Community Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Have questions? We're here to help!</p>
+                    <button class="btn btn-outline-primary" onclick="contactSupport()">Contact Support</button>
+                </div>
+            </div>
+            <p>&copy; 2025 Mind Heal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="meditation.js"></script>
+</body>
+
+</html> 

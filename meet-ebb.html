@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Ebb - Personalized Content Recommendations | Mind Heal">
+    <title>Meet Ebb - Mind Heal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Article Specific Styles */
+        .article-hero {
+            background: linear-gradient(45deg, #FF8A00, #FF5630);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .article-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .article-hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 24px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .article-meta i {
+            margin-right: 6px;
+        }
+        
+        .article-content {
+            padding: 60px 0;
+        }
+        
+        .article-content p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: #333;
+        }
+        
+        .article-content h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            color: #1a1a1a;
+        }
+        
+        .article-content h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 30px 0 16px;
+            color: #1a1a1a;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+        
+        .article-content li {
+            margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .article-image {
+            margin: 30px 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .article-quote {
+            background: #f8f9fa;
+            border-left: 4px solid #FF5630;
+            padding: 24px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .related-articles {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+        
+        .related-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .related-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .related-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .related-content {
+            padding: 24px;
+        }
+        
+        .related-content h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .related-content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg" alt="Mind Heal Logo" class="logo-img">
+                <span class="brand-text">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles & Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="ai-care.html" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <h1>Meet Ebb</h1>
+            <p>Your personal AI guide to better mental wellness through personalized content recommendations.</p>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> By Mind Heal Team</span>
+                <span><i class="fas fa-calendar"></i> Updated May 2023</span>
+                <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="article-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead">Introducing <strong>Ebb</strong>, Mind Heal's groundbreaking AI companion that learns your preferences, understands your mental wellness journey, and recommends content tailored specifically to your needs.</p>
+                    
+                    <div class="article-image">
+                        <img src="Images/background1.jpeg" alt="Ebb AI Interface" class="img-fluid">
+                    </div>
+                    
+                    <h2>The Science Behind Ebb</h2>
+                    <p>Ebb uses cutting-edge machine learning algorithms to analyze your interactions with Mind Heal content. By understanding your preferences, habits, and the types of content that resonate with you most, Ebb creates a personalized mental wellness journey that adapts to your changing needs.</p>
+                    
+                    <p>Our team of psychologists, data scientists, and AI experts have collaborated to create an AI system that not only understands content but also recognizes emotional states and wellness goals.</p>
+                    
+                    <div class="article-quote">
+                        "Ebb represents the future of mental wellness technology — it's like having a personal mental health coach that knows exactly what you need, when you need it."
+                    </div>
+                    
+                    <h2>How Ebb Works</h2>
+                    <p>The more you interact with Mind Heal, the smarter Ebb becomes. Here's how it works:</p>
+                    
+                    <ol>
+                        <li><strong>Personalized Dashboard:</strong> Ebb curates a daily selection of meditations, articles, exercises, and other content based on your preferences and goals.</li>
+                        <li><strong>Mood Tracking:</strong> By understanding your emotional patterns, Ebb can suggest content that addresses your specific mental state.</li>
+                        <li><strong>Progress Insights:</strong> Ebb tracks your mental wellness journey and provides insights on your progress, highlighting areas of improvement.</li>
+                        <li><strong>Smart Recommendations:</strong> As you engage with content, Ebb learns what works best for you and refines its recommendations.</li>
+                    </ol>
+                    
+                    <div class="article-image">
+                        <img src="Images/background2.jpeg" alt="Ebb Personalized Dashboard" class="img-fluid">
+                    </div>
+                    
+                    <h2>Privacy and Ethics</h2>
+                    <p>At Mind Heal, we take your privacy seriously. Ebb has been designed with privacy-first principles:</p>
+                    
+                    <ul>
+                        <li>All data is encrypted and stored securely</li>
+                        <li>Your personal information is never shared with third parties</li>
+                        <li>You have complete control over what data Ebb collects</li>
+                        <li>Our AI systems are regularly audited by independent ethics committees</li>
+                    </ul>
+                    
+                    <h2>Getting Started with Ebb</h2>
+                    <p>Ready to experience personalized mental wellness guidance? Here's how to get started:</p>
+                    
+                    <ol>
+                        <li>Create or log in to your Mind Heal account</li>
+                        <li>Complete the initial preference questionnaire (takes about 3 minutes)</li>
+                        <li>Explore Ebb's first set of recommendations</li>
+                        <li>Provide feedback to help Ebb learn your preferences faster</li>
+                    </ol>
+                    
+                    <div class="text-center mt-5 mb-5">
+                        <a href="ai-care.html" class="btn btn-primary btn-lg">Try Ebb Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <div class="container">
+            <h2 class="text-center mb-5">You May Also Like</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="related-card">
+                        <div class="related-image" style="background: linear-gradient(45deg, #FF8B2C, #FF6B2C);"></div>
+                        <div class="related-content">
+                            <h3>Mindful Families Collection</h3>
+                            <p>Bring your attention to all interactions with your children</p>
+                            <a href="mindful-families.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="related-card">
+                        <div class="related-image" style="background: linear-gradient(45deg, #FF9F1C, #FFBE0B);"></div>
+                        <div class="related-content">
+                            <h3>Politics Without Panic</h3>
+                            <p>Stress-relieving tools for election season</p>
+                            <a href="politics-without-panic.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="related-card">
+                        <div class="related-image" style="background: linear-gradient(45deg, #4EA8DE, #56CCF2);"></div>
+                        <div class="related-content">
+                            <h3>Mind Heal XR</h3>
+                            <p>A playground for your mind</p>
+                            <a href="mind-heal-xr.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="Article.html">Articles</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p>Have questions? We're here to help.</p>
+                    <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mind Heal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

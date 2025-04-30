@@ -1,0 +1,447 @@
+/* Music Page Styles */
+.music-hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+}
+
+.music-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+}
+
+.music-hero p {
+    font-size: 1.25rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-wrapper {
+    display: flex;
+    background: white;
+    border-radius: 50px;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-button {
+    background: #9333ea;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: #7e22ce;
+}
+
+.search-filters {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: white;
+    color: #4a5568;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #9333ea;
+    color: white;
+    border-color: #9333ea;
+}
+
+/* Featured Playlists */
+.featured-playlists, .popular-tracks {
+    padding: 60px 0;
+}
+
+.playlists-grid, .tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 2rem;
+}
+
+.playlist-card, .track-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.playlist-card:hover, .track-card:hover {
+    transform: translateY(-5px);
+}
+
+.playlist-image, .track-image {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.playlist-image img, .track-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button i {
+    font-size: 24px;
+    color: #9333ea;
+}
+
+.play-button:hover {
+    background: white;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.playlist-content, .track-content {
+    padding: 1.5rem;
+}
+
+.playlist-content h3, .track-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+}
+
+.playlist-content p, .track-content p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.playlist-meta, .track-meta {
+    display: flex;
+    gap: 1rem;
+    color: #718096;
+    font-size: 0.875rem;
+}
+
+/* Categories Section */
+.music-categories {
+    padding: 60px 0;
+    background: #f7fafc;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 64px;
+    height: 64px;
+    background: #f3e8ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.category-icon i {
+    font-size: 24px;
+    color: #9333ea;
+}
+
+.category-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+}
+
+.category-card p {
+    color: #4a5568;
+    font-size: 0.875rem;
+}
+
+/* YouTube Player */
+.youtube-player-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    background: white;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.youtube-player-container:hover {
+    transform: translateY(-5px);
+}
+
+#player {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    background: white;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.chatbot-container:hover {
+    transform: translateY(-5px);
+}
+
+.chatbot-header {
+    background: #9333ea;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chatbot-header .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chatbot-body {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.message.user {
+    background: #f3e8ff;
+    color: #9333ea;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background: #f0f0f0;
+    color: #333;
+    align-self: flex-start;
+}
+
+.message.typing {
+    background: #f0f0f0;
+    color: transparent;
+    width: 60px;
+    display: flex;
+    gap: 4px;
+    padding: 8px 12px;
+}
+
+.message.typing span {
+    width: 8px;
+    height: 8px;
+    background: #9333ea;
+    border-radius: 50%;
+    animation: typing 1s infinite;
+}
+
+.message.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.message.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+}
+
+.chatbot-input {
+    display: flex;
+    gap: 8px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.chatbot-input input:focus {
+    border-color: #9333ea;
+}
+
+.chatbot-input button {
+    background: #9333ea;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.chatbot-input button:hover {
+    background: #7e22ce;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .music-hero h1 {
+        font-size: 2rem;
+    }
+
+    .music-hero p {
+        font-size: 1rem;
+    }
+
+    .playlists-grid, .tracks-grid, .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .youtube-player-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .chatbot-container {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .playlists-grid, .tracks-grid, .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.playlists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+@media (max-width: 1024px) {
+    .playlists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .playlists-grid {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mind Heal - Your mental wellness companion">
+    <title>Mind Heal Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/Websitelogo.jpg" alt="Mind Heal Logo" class="logo-img">
+                <span class="brand-text">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles & Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="ai-care.html" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            padding: 0.75rem 0;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.95) !important;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-img {
+            height: 38px;
+            width: auto;
+            border-radius: 6px;
+        }
+
+        .brand-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .nav-link {
+            color: #1a1a1a !important;
+            font-size: 0.92rem;
+            font-weight: 500;
+            padding: 0.5rem 0.8rem !important;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: #0066ff !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #0066ff;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .navbar .btn-primary {
+            background-color: #0066ff;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.92rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .btn-primary:hover {
+            background-color: #0052cc;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                background: white;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            .nav-item {
+                margin: 0.5rem 0;
+            }
+
+            .navbar .btn-primary {
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <section class="container1" id="home">
+        <div class="text-container">
+            <h2>Everything your mind needs.</h2>
+            <p>Discover personalized mental wellness tools and resources to help you feel your best every day.</p>
+            <button class="btn btn-dark">Try our AI</button>
+        </div>
+        <div class="img-container">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <img src="Images/topContain.jpg" alt="Happy person meditating">
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="allContent">
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>What kind of mental wellness are you looking for?</h2>
+            <div class="feat-container">
+                <!-- Stress Less -->
+                <div class="feat" onclick="toggleDetails(this, 'stress-details')">
+                    <div class="feat-icon stress">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 8L24 16M16 24L8 16" stroke="#FFB800" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="feat-text">Stress less</div>
+                    <div class="feat-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="stress-details" class="feat-details">
+                    <h3>Stress Management Tools</h3>
+                    <p>Discover proven techniques to reduce stress and find your calm. Our guided exercises help you
+                        develop resilience and maintain peace of mind throughout your day.</p>
+                    <div class="actions">
+                        <a href="#" class="primary-btn" onclick="startStressManagement()">Start Now</a>
+                        <a href="#" class="secondary-btn" onclick="learnMoreStress()">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Sleep Soundly -->
+                <div class="feat" onclick="toggleDetails(this, 'sleep-details')">
+                    <div class="feat-icon sleep">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M16 8C20.4183 8 24 11.5817 24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 8 16 8Z"
+                                stroke="#9747FF" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <div class="feat-text">Sleep soundly</div>
+                    <div class="feat-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="sleep-details" class="feat-details">
+                    <h3>Better Sleep Awaits</h3>
+                    <p>Transform your nights with our collection of sleep stories, meditations, and calming sounds. Wake
+                        up feeling refreshed and energized.</p>
+                    <div class="actions">
+                        <a href="sleep.html" class="primary-btn">Try Sleep Sounds</a>
+                        <a href="sleep.html#resources" class="secondary-btn">View All</a>
+                    </div>
+                </div>
+
+                <!-- Manage Anxiety -->
+                <div class="feat" onclick="toggleDetails(this, 'anxiety-details')">
+                    <div class="feat-icon anxiety">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="10" stroke="#2B9BF4" stroke-width="3" stroke-dasharray="4 4" />
+                        </svg>
+                    </div>
+                    <div class="feat-text">Manage anxiety</div>
+                    <div class="feat-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="anxiety-details" class="feat-details">
+                    <h3>Anxiety Relief Tools</h3>
+                    <p>Learn effective strategies to manage anxiety and build emotional resilience. Our expert-guided
+                        sessions help you find peace in challenging moments.</p>
+                    <div class="actions">
+                        <a href="#" class="primary-btn" onclick="startAnxietyProgram()">Begin Journey</a>
+                        <a href="#" class="secondary-btn" onclick="exploreAnxietyTools()">Explore Tools</a>
+                    </div>
+                </div>
+
+                <!-- Text a Coach -->
+                <div class="feat" onclick="toggleDetails(this, 'coach-details')">
+                    <div class="feat-icon coach">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="8" width="20" height="16" rx="2" stroke="#2B9BF4" stroke-width="3" />
+                            <circle cx="16" cy="16" r="2" fill="#2B9BF4" />
+                        </svg>
+                    </div>
+                    <div class="feat-text">Text a coach</div>
+                    <div class="feat-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="coach-details" class="feat-details">
+                    <h3>Personal Coaching</h3>
+                    <p>Connect with experienced mental health coaches anytime, anywhere. Get personalized guidance and
+                        support when you need it most.</p>
+                    <div class="actions">
+                        <a href="ai-care.html" class="primary-btn">Chat Now</a>
+                        <a href="about.html#coaches" class="secondary-btn">Meet Coaches</a>
+                    </div>
+                </div>
+
+                <!-- Practice Meditation -->
+                <div class="feat" onclick="toggleDetails(this, 'meditation-details')">
+                    <div class="feat-icon meditation">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="10" stroke="#FF8A00" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <div class="feat-text">Practice meditation</div>
+                    <div class="feat-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="meditation-details" class="feat-details">
+                    <h3>Meditation Library</h3>
+                    <p>Explore our vast collection of guided meditations for every moment. From quick breaks to deep
+                        practice, find your perfect meditation match.</p>
+                    <div class="actions">
+                        <a href="meditation.html" class="primary-btn">Start Meditating</a>
+                        <a href="meditation.html#library" class="secondary-btn">Browse All</a>
+                    </div>
+                </div>
+
+                <!-- Care for Team -->
+                <div class="feat" onclick="toggleDetails(this, 'team-details')">
+                    <div class="feat-icon team">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="18" width="20" height="6" rx="1" fill="#FF4FB0" fill-opacity="0.3"
+                                stroke="#FF4FB0" stroke-width="3" />
+                            <rect x="6" y="8" width="20" height="6" rx="1" fill="#FF4FB0" fill-opacity="0.3"
+                                stroke="#FF4FB0" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <div class="feat-text">Care for your team</div>
+                    <div class="feat-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="team-details" class="feat-details">
+                    <h3>Team Wellness Solutions</h3>
+                    <p>Support your team's mental health with our comprehensive workplace wellness programs. Create a
+                        more positive and productive work environment.</p>
+                    <div class="actions">
+                        <a href="#" class="primary-btn" onclick="startTeamProgram()">Get Started</a>
+                        <a href="#" class="secondary-btn" onclick="learnMoreTeam()">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .features-section {
+                    padding: 60px 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .feat-container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 24px;
+                    margin-top: 40px;
+                }
+
+                .feat {
+                    background: white;
+                    border-radius: 16px;
+                    padding: 24px;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    border: 1px solid #e5e7eb;
+                }
+
+                .feat:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                    border-color: #2D1B54;
+                }
+
+                .feat.active {
+                    background: #f9f5ff;
+                    border-color: #2D1B54;
+                }
+
+                .feat-icon {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f9f5ff;
+                }
+
+                .feat-text {
+                    flex: 1;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #1a1a1a;
+                }
+
+                .feat-arrow {
+                    color: #6b7280;
+                    transition: transform 0.3s ease;
+                }
+
+                .feat.active .feat-arrow {
+                    transform: rotate(90deg);
+                }
+
+                .feat-details {
+                    background: white;
+                    border-radius: 16px;
+                    padding: 32px;
+                    margin-top: 16px;
+                    display: none;
+                    animation: slideDown 0.3s ease;
+                    border: 1px solid #e5e7eb;
+                }
+
+                .feat-details.active {
+                    display: block;
+                }
+
+                .feat-details h3 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #1a1a1a;
+                    margin: 0 0 16px 0;
+                }
+
+                .feat-details p {
+                    font-size: 16px;
+                    line-height: 1.6;
+                    color: #4b5563;
+                    margin: 0 0 24px 0;
+                }
+
+                .actions {
+                    display: flex;
+                    gap: 16px;
+                }
+
+                .primary-btn,
+                .secondary-btn {
+                    padding: 12px 24px;
+                    border-radius: 100px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+
+                .primary-btn {
+                    background: #2D1B54;
+                    color: white;
+                }
+
+                .primary-btn:hover {
+                    background: #231442;
+                    transform: translateY(-1px);
+                }
+
+                .secondary-btn {
+                    background: #f3f4f6;
+                    color: #1a1a1a;
+                }
+
+                .secondary-btn:hover {
+                    background: #e5e7eb;
+                    transform: translateY(-1px);
+                }
+
+                @keyframes slideDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-10px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .feat-container {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .actions {
+                        flex-direction: column;
+                    }
+
+                    .primary-btn,
+                    .secondary-btn {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            </style>
+
+            <script>
+                function toggleDetails(featElement, detailsId) {
+                    // Remove active class from all features and details
+                    document.querySelectorAll('.feat').forEach(el => el.classList.remove('active'));
+                    document.querySelectorAll('.feat-details').forEach(el => el.classList.remove('active'));
+
+                    // Add active class to clicked feature and its details
+                    featElement.classList.add('active');
+                    document.getElementById(detailsId).classList.add('active');
+
+                    // Scroll the details into view smoothly
+                    document.getElementById(detailsId).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+
+                // Function handlers for various actions
+                function startStressManagement() {
+                    window.location.href = 'meditation.html#stress';
+                }
+
+                function learnMoreStress() {
+                    window.location.href = 'Article.html#stress-management';
+                }
+
+                function startAnxietyProgram() {
+                    window.location.href = 'meditation.html#anxiety';
+                }
+
+                function exploreAnxietyTools() {
+                    window.location.href = 'Article.html#anxiety-tools';
+                }
+
+                function startTeamProgram() {
+                    window.location.href = 'plans.html#team';
+                }
+
+                function learnMoreTeam() {
+                    window.location.href = 'About.html#team-wellness';
+                }
+            </script>
+        </section>
+
+        <!-- Tab Navigation Section -->
+        <section class="tab-navigation">
+            <div class="tab-container">
+                <button class="tab-button" data-tab="guided">Guided meditations</button>
+                <button class="tab-button active" data-tab="ai">AI guidance</button>
+                <button class="tab-button" data-tab="sleep">Sleep resources</button>
+                <button class="tab-button" data-tab="expert">Expert-led programs</button>
+            </div>
+
+            <!-- Guided Meditations Content -->
+            <div class="tab-content" id="guided-content">
+                <div class="ai-support-container">
+                    <div class="lottie-container">
+                        <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_WdTEui.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="support-content">
+                        <h2>Guided Journey</h2>
+                        <p>Experience peaceful meditation sessions led by expert instructors. Find your inner calm with
+                            our carefully curated guided practices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Guidance Content -->
+            <div class="tab-content active" id="ai-content" style="display: block;">
+                <div class="ai-support-container">
+                    <div class="lottie-container">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_M9p23l.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="support-content">
+                        <h2>Always-there support</h2>
+                        <p>Unpack what's on your mind with Ebb, our empathetic AI companion, and get personalized
+                            guidance whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sleep Resources Content -->
+            <div class="tab-content" id="sleep-content">
+                <div class="ai-support-container">
+                    <div class="lottie-container">
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_twxv8mn4.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="support-content">
+                        <h2>Better Sleep Awaits</h2>
+                        <p>Discover our collection of sleep stories, calming sounds, and bedtime meditations designed to
+                            help you get the rest you deserve.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expert-led Programs Content -->
+            <div class="tab-content" id="expert-content">
+                <div class="ai-support-container">
+                    <div class="lottie-container">
+                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_swnrn2oy.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="support-content">
+                        <h2>Expert Guidance</h2>
+                        <p>Connect with licensed therapists and mental health professionals for personalized support and
+                            structured programs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .tab-navigation {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 40px 20px;
+                }
+
+                .tab-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 16px;
+                    margin-bottom: 40px;
+                    flex-wrap: wrap;
+                }
+
+                .tab-button {
+                    padding: 12px 24px;
+                    border-radius: 100px;
+                    border: none;
+                    background: #FAF3F0;
+                    color: #1A1A1A;
+                    font-size: 16px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+
+                .tab-button:hover {
+                    background: #e5e5e5;
+                }
+
+                .tab-button.active {
+                    background: #1A1A1A;
+                    color: white;
+                }
+
+                .tab-content {
+                    opacity: 0;
+                    visibility: hidden;
+                    height: 0;
+                    transition: all 0.3s ease;
+                    display: none;
+                    border-radius: 24px;
+                    overflow: hidden;
+                }
+
+                .tab-content.active {
+                    opacity: 1;
+                    visibility: visible;
+                    height: auto;
+                    display: block;
+                }
+
+                .ai-support-container {
+                    display: grid;
+                    grid-template-columns: 1.2fr 1fr;
+                    gap: 40px;
+                    padding: 64px;
+                    border-radius: 24px;
+                    background: linear-gradient(135deg, #FFD700, #FFA500);
+                }
+
+                .lottie-container {
+                    width: 100%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 24px;
+                    overflow: hidden;
+                }
+
+                .support-content {
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .support-content h2 {
+                    font-size: 48px;
+                    line-height: 1.2;
+                    margin: 0 0 24px 0;
+                }
+
+                .support-content p {
+                    font-size: 20px;
+                    line-height: 1.6;
+                    margin: 0;
+                    opacity: 0.9;
+                }
+
+                /* Responsive Design */
+                @media (max-width: 1024px) {
+                    .ai-support-container {
+                        grid-template-columns: 1fr;
+                        padding: 40px;
+                    }
+
+                    .support-content {
+                        text-align: center;
+                    }
+
+                    .support-content h2 {
+                        font-size: 36px;
+                    }
+
+                    .support-content p {
+                        font-size: 18px;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .tab-container {
+                        flex-direction: column;
+                        align-items: stretch;
+                    }
+
+                    .tab-button {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            </style>
+        </section>
+
+        <script>
+            // Tab Navigation
+            document.addEventListener('DOMContentLoaded', function () {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                const tabContents = document.querySelectorAll('.tab-content');
+
+                // Set AI guidance as default active tab
+                const aiButton = document.querySelector('[data-tab="ai"]');
+                if (aiButton) {
+                    aiButton.classList.add('active');
+                }
+
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Remove active class from all buttons and contents
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        tabContents.forEach(content => {
+                            content.style.display = 'none';
+                            content.classList.remove('active');
+                        });
+
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        // Show corresponding content
+                        const tabId = button.getAttribute('data-tab');
+                        const content = document.getElementById(tabId + '-content');
+                        if (content) {
+                            content.style.display = 'block';
+                            setTimeout(() => {
+                                content.classList.add('active');
+                            }, 10);
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <!-- Expert Section -->
+        <section class="text-sec">
+            <h2>Designed by experts,<br> delivered with care</h2>
+            <p>From guided meditations to one-on-one coaching, our team of clinical experts and trained coaches work
+                together to bring you science-backed care.</p>
+            <button>Learn More</button>
+        </section>
+
+        <!-- Team Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="card"><img src="Images/prmanamnd.jpg" alt="Expert 1">
+                    <p class="name">Premanand Maharaj</p>
+                    <p class="info">Spritual Guide</p>
+                </div>
+                <div class="card"><img src="Images/jayaKishori.jpg" alt="Expert 2">
+                    <p class="name">Jaya Kishori</p>
+                    <p class="info">Mindfulness Coach</p>
+                </div>
+                <div class="card"><img src="Images/bagheswar.jpg" alt="Expert 3">
+                    <p class="name">Bageshwar Dham</p>
+                    <p class="info">Spiritual Guide</p>
+                </div>
+                <div class="card"><img src="Images/doc.jpg" alt="Expert 4">
+                    <p class="name">Dr. Sarah Chen</p>
+                    <p class="info">Therapist</p>
+                </div>
+                <div class="card"><img src="Images/doc.jpg.jpg" alt="Expert 5">
+                    <p class="name">Dr. Michael Johnson</p>
+                    <p class="info">Sleep Specialist</p>
+                </div>
+                <div class="card"><img src="Images/doc3.jpg" alt="Expert 6">
+                    <p class="name">Dr. Lisa Thompson</p>
+                    <p class="info">Mental Health Counselor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>Members are enjoying happier<br>and healthier lives</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I appreciate the consistent reminders to be kind and patient with myself as I learn and
+                            practice daily habits that are helping me find a calmer daily space."</p>
+                        <div class="testimonial-author">Member on forming more helpful habits</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Mind Heal helped me begin the process of stepping back from toxic thinking and being a part
+                            of something bigger than my own personal grievances."</p>
+                        <div class="testimonial-author">Member on learning to think in more helpful ways</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The strategies in the courses allow me to work on a part of myself that I am struggling
+                            with. Mind Heal changed the relationship I have with myself."</p>
+                        <div class="testimonial-author">Member on working through their feelings</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Library Section -->
+        <section class="library-section">
+            <h2>Explore our library</h2>
+            <div class="library-tags">
+                <button class="tag active" onclick="switchLibraryContent('featured')">
+                    <svg class="tag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2l2.5 5 5.5.5-4 4 1 5.5-5-2.5L5 17l1-5.5-4-4 5.5-.5L10 2z" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Featured
+                </button>
+                <button class="tag" onclick="switchLibraryContent('popular')">
+                    <svg class="tag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M15.7 8c.6-1.1.9-2.2.9-3.3 0-.5-.1-1-.2-1.5-.3.6-.6 1.2-1.1 1.8C14 6.5 12.4 7.5 10.5 8c-1.9.5-3.5.5-4.8 0-1.3-.5-2.3-1.3-2.9-2.6-.3.5-.4 1-.4 1.6 0 1.1.3 2.2.9 3.3.6 1.1 1.5 2 2.7 2.7 1.2.7 2.5 1 4 1s2.8-.3 4-1c1.2-.7 2.1-1.6 2.7-2.7z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M10 15c-2.2 0-4-.7-5.3-2-.3.5-.5 1.1-.5 1.7 0 1.1.4 2.1 1.2 2.9.8.8 1.9 1.2 3.1 1.2 1.2 0 2.3-.4 3.1-1.2.8-.8 1.2-1.7 1.2-2.9 0-.6-.2-1.2-.5-1.7-1.3 1.3-3.1 2-5.3 2z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Popular
+                </button>
+                <button class="tag" id="sleepLibraryButton" onclick="switchLibraryContent('sleep')">
+                    <svg class="tag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M10 6v4m0 4h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Sleep
+                </button>
+                <button class="tag" onclick="switchLibraryContent('stress')">
+                    <svg class="tag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M10 6v4m0 4h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Stress
+                </button>
+                <button class="tag" onclick="switchLibraryContent('meditation')">
+                    <svg class="tag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M15 10h1m-12 0h1m4-5v1m0 8v1" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    Meditation
+                </button>
+                <button class="tag" onclick="switchLibraryContent('music')">
+                    <svg class="tag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M14 3v10c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2c.4 0 .7.1 1 .3V6.5l-6 2v6.5c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2c.4 0 .7.1 1 .3V7c0-.4.2-.7.5-.9l7-2.5c.5-.2 1 .2 1 .7z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Music
+                </button>
+            </div>
+
+            <style>
+                .library-tags {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 12px;
+                    margin-bottom: 32px;
+                    padding: 0 24px;
+                    max-width: 900px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .tag {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    padding: 10px 20px;
+                    border: 1.5px solid #e5e7eb;
+                    border-radius: 100px;
+                    background: white;
+                    color: #4b5563;
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                    width: 100%;
+                }
+
+                .tag:hover {
+                    border-color: #9333ea;
+                    color: #9333ea;
+                    transform: translateY(-1px);
+                }
+
+                .tag.active {
+                    background: #9333ea;
+                    border-color: #9333ea;
+                    color: white;
+                }
+
+                .tag-icon {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .tag:hover .tag-icon {
+                    color: #9333ea;
+                }
+
+                .tag.active .tag-icon {
+                    color: white;
+                }
+
+                /* Click effect styles */
+                .tag-clicked {
+                    transform: scale(0.95);
+                    background-color: rgba(147, 51, 234, 0.2);
+                    transition: all 0.1s ease;
+                }
+
+                @media (max-width: 768px) {
+                    .library-tags {
+                        grid-template-columns: 1fr;
+                        gap: 8px;
+                        padding: 0 16px;
+                    }
+
+                    .tag {
+                        padding: 8px 16px;
+                        font-size: 14px;
+                    }
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    .library-tags {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+            </style>
+
+            <div class="library-content-container">
+                <!-- Featured Content -->
+                <div id="featured-content" class="library-content active">
+                    <div class="library-grid">
+                        <div class="library-card new">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #FF8A00, #FF5630);">
+                                <div class="emoji">😌</div>
+                            </div>
+                            <h3 style="color: #000;">Meet Ebb</h3>
+                            <p style="color: #000;">Get personalized content recommendations with Ebb</p>
+                        </div>
+                        <div class="library-card">
+                            <div class="card-image" style="background: linear-gradient(45deg, #FF8B2C, #FF6B2C);">
+                                <div class="icon">🏠</div>
+                            </div>
+                            <h3 style="color: #000;">Mindful Families Collection</h3>
+                            <p style="color: #000;">Bring your attention to all interactions with your children</p>
+                        </div>
+                        <div class="library-card new">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #FF9F1C, #FFBE0B);">
+                                <div class="icon">🎯</div>
+                            </div>
+                            <h3 style="color: #000;">Politics Without Panic</h3>
+                            <p style="color: #000;">Stress-relieving tools for election season</p>
+                        </div>
+                        <div class="library-card trending">
+                            <div class="card-badge">Trending</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #4EA8DE, #56CCF2);">
+                                <div class="icon">🎮</div>
+                            </div>
+                            <h3 style="color: #000;">Mind Heal XR</h3>
+                            <p style="color: #000;">A playground for your mind</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular Content -->
+                <div id="popular-content" class="library-content">
+                    <div class="library-grid">
+                        <div class="library-card trending">
+                            <div class="card-badge">Trending</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #FF6B6B, #FF8787);">
+                                <div class="icon">⭐</div>
+                            </div>
+                            <h3 style="color: #000;">Daily Calm</h3>
+                            <p style="color: #000;">Most popular daily meditation series</p>
+                        </div>
+
+                        <div class="library-card new">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #4FACFE, #00F2FE);">
+                                <div class="icon">🌅</div>
+                            </div>
+                            <h3 style="color: #000;">Morning Meditations</h3>
+                            <p style="color: #000;">Start your day with mindfulness</p>
+                        </div>
+
+                        <!-- Add other popular cards here -->
+                    </div>
+                </div>
+
+                <!-- Sleep Content -->
+                <div id="sleep-content" class="library-content">
+                    <div class="library-grid">
+                        <div class="library-card">
+                            <div class="card-image" style="background: linear-gradient(45deg, #9747FF, #B278FF);">
+                                <div class="icon">🌙</div>
+                            </div>
+                            <h3 style="color: #000;">Sleep Meditation</h3>
+                            <p style="color: #000;">Guided meditations for peaceful sleep</p>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="card-image" style="background: linear-gradient(45deg, #7B61FF, #A990FF);">
+                                <div class="icon">🎵</div>
+                            </div>
+                            <h3 style="color: #000;">Sleep Sounds</h3>
+                            <p style="color: #000;">Calming sounds for better sleep</p>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="card-image" style="background: linear-gradient(45deg, #6B4BFF, #9E7BFF);">
+                                <div class="icon">📖</div>
+                            </div>
+                            <h3 style="color: #000;">Sleep Stories</h3>
+                            <p style="color: #000;">Soothing bedtime stories for adults</p>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="card-image" style="background: linear-gradient(45deg, #5C35FF, #8E68FF);">
+                                <div class="icon">💡</div>
+                            </div>
+                            <h3 style="color: #000;">Sleep Tips</h3>
+                            <p style="color: #000;">Expert advice for quality sleep</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stress Content -->
+                <div id="stress-content" class="library-content">
+                    <div class="library-grid">
+                        <div class="library-card trending">
+                            <div class="card-badge">Trending</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #FF8C42, #FEB47B);">
+                                <div class="icon">🌸</div>
+                            </div>
+                            <h3 style="color: #000;">Stress Relief</h3>
+                            <p style="color: #000;">Quick anxiety-reducing exercises</p>
+                        </div>
+
+                        <div class="library-card new">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #A8E6CF, #1DE9B6);">
+                                <div class="icon">🍃</div>
+                            </div>
+                            <h3 style="color: #000;">Calm Mind</h3>
+                            <p style="color: #000;">Guided stress management</p>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="card-image" style="background: linear-gradient(45deg, #B6CEE8, #F578DC);">
+                                <div class="icon">🎵</div>
+                            </div>
+                            <h3 style="color: #000;">Peace Break</h3>
+                            <p style="color: #000;">Short relaxation moments</p>
+                        </div>
+
+                        <div class="library-card trending">
+                            <div class="card-badge">Trending</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #FFD3A5, #FD6585);">
+                                <div class="icon">🌺</div>
+                            </div>
+                            <h3 style="color: #000;">Mindful Moments</h3>
+                            <p style="color: #000;">Daily stress-relief practices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meditation Content -->
+                <div id="meditation-content" class="library-content">
+                    <div class="library-grid">
+                        <div class="library-card new" onclick="playMeditationVideo('GXoErccq0vw')">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #9333EA, #7C3AED);">
+                                <div class="emoji">🧘‍♀️</div>
+                            </div>
+                            <h3 style="color: #000;">Mindful Breathing</h3>
+                            <p style="color: #000;">Guided breathing meditation for beginners</p>
+                            <div class="youtube-player" id="meditation-player-1"></div>
+                        </div>
+
+                        <div class="library-card trending" onclick="playMeditationVideo('O-6f5wQXSu8')">
+                            <div class="card-badge">Trending</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #3B82F6, #2563EB);">
+                                <div class="icon">🌟</div>
+                            </div>
+                            <h3 style="color: #000;">Body Scan Meditation</h3>
+                            <p style="color: #000;">Deep relaxation for mind and body</p>
+                            <div class="youtube-player" id="meditation-player-2"></div>
+                        </div>
+
+                        <div class="library-card" onclick="playMeditationVideo('inpok4MKVLM')">
+                            <div class="card-image" style="background: linear-gradient(45deg, #10B981, #059669);">
+                                <div class="icon">🌿</div>
+                            </div>
+                            <h3 style="color: #000;">Zen Garden Meditation</h3>
+                            <p style="color: #000;">Peaceful meditation with nature sounds</p>
+                            <div class="youtube-player" id="meditation-player-3"></div>
+                        </div>
+
+                        <div class="library-card new" onclick="playMeditationVideo('86m4RC_ADEY')">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #F59E0B, #D97706);">
+                                <div class="icon">✨</div>
+                            </div>
+                            <h3 style="color: #000;">Mindfulness Journey</h3>
+                            <p style="color: #000;">Guided mindfulness practice for clarity</p>
+                            <div class="youtube-player" id="meditation-player-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Content -->
+                <div id="music-content" class="library-content">
+                    <div class="library-grid">
+                        <div class="library-card new" onclick="playVideo('1Hx0N2YuR1Q')">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #8B5CF6, #6366F1);">
+                                <div class="emoji">🎵</div>
+                            </div>
+                            <h3 style="color: #000;">Calming Piano</h3>
+                            <p style="color: #000;">Relaxing piano melodies for meditation</p>
+                            <div class="youtube-player" id="player-1"></div>
+                        </div>
+
+                        <div class="library-card" onclick="playVideo('1ZYbU82GVz4')">
+                            <div class="card-image" style="background: linear-gradient(45deg, #10B981, #059669);">
+                                <div class="icon">🎶</div>
+                            </div>
+                            <h3 style="color: #000;">Nature Sounds</h3>
+                            <p style="color: #000;">Soothing sounds of nature</p>
+                            <div class="youtube-player" id="player-2"></div>
+                        </div>
+
+                        <div class="library-card new" onclick="playVideo('77ZozI0rw7w')">
+                            <div class="card-badge">New</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #F59E0B, #D97706);">
+                                <div class="icon">🎼</div>
+                            </div>
+                            <h3 style="color: #000;">Meditation Music</h3>
+                            <p style="color: #000;">Deep meditation background music</p>
+                            <div class="youtube-player" id="player-3"></div>
+                        </div>
+
+                        <div class="library-card trending" onclick="playVideo('lTRiuFIWV54')">
+                            <div class="card-badge">Trending</div>
+                            <div class="card-image" style="background: linear-gradient(45deg, #EC4899, #BE185D);">
+                                <div class="icon">🎧</div>
+                            </div>
+                            <h3 style="color: #000;">Ambient Sounds</h3>
+                            <p style="color: #000;">Peaceful ambient music for focus</p>
+                            <div class="youtube-player" id="player-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .library-content {
+                        display: none;
+                        opacity: 0;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    .library-content.active {
+                        display: block;
+                        opacity: 1;
+                    }
+
+                    .library-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 24px;
+                        padding: 24px;
+                    }
+
+                    .library-card {
+                        background: white;
+                        border-radius: 24px;
+                        padding: 24px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                        cursor: pointer;
+                        transition: transform 0.3s ease;
+                        position: relative;
+                    }
+
+                    .library-card:hover {
+                        transform: translateY(-4px);
+                    }
+
+                    .card-badge {
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        background: white;
+                        padding: 4px 12px;
+                        border-radius: 100px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        z-index: 1;
+                    }
+
+                    .new .card-badge {
+                        background: #2B9BF4;
+                        color: white;
+                    }
+
+                    .trending .card-badge {
+                        background: #FF4FB0;
+                        color: white;
+                    }
+
+                    .card-image {
+                        height: 200px;
+                        border-radius: 16px;
+                        margin-bottom: 16px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .card-image .emoji,
+                    .card-image .icon {
+                        font-size: 48px;
+                    }
+
+                    .library-card h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 0 0 8px 0;
+                    }
+
+                    .library-card p {
+                        font-size: 16px;
+                        color: #666;
+                        margin: 0;
+                    }
+                </style>
+            </div>
+        </section>
+
+        <script>
+            // Initialize the library content
+            document.addEventListener('DOMContentLoaded', function () {
+                // Show featured content by default when page loads
+                switchLibraryContent('featured');
+
+                // Make sure the sleep button click works properly
+                document.querySelector('.tag[onclick*="sleep"]').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    // Add visual feedback for the click
+                    this.classList.add('tag-clicked');
+                    setTimeout(() => {
+                        this.classList.remove('tag-clicked');
+                    }, 300);
+
+                    // Show sleep content
+                    switchLibraryContent('sleep');
+                });
+
+                // Add click effects to all sleep category boxes
+                document.querySelectorAll('#sleep-content .library-card').forEach(card => {
+                    card.addEventListener('click', function () {
+                        // Visual feedback for the click
+                        this.classList.add('card-clicked');
+                        setTimeout(() => {
+                            this.classList.remove('card-clicked');
+                        }, 300);
+
+                        // Navigate to the link destination
+                        const link = this.querySelector('a');
+                        if (link) {
+                            window.location.href = link.getAttribute('href');
+                        } else if (this.tagName.toLowerCase() === 'a') {
+                            window.location.href = this.getAttribute('href');
+                        }
+                    });
+                });
+            });
+
+            // Function to switch between library content sections
+            function switchLibraryContent(contentType) {
+                console.log("Switching to: " + contentType); // Debug
+
+                // Remove active class from all tags
+                document.querySelectorAll('.tag').forEach(tag => tag.classList.remove('active'));
+
+                // Hide all content sections
+                document.querySelectorAll('.library-content').forEach(content => {
+                    content.style.display = 'none';
+                    content.classList.remove('active');
+                });
+
+                // Show the selected content
+                const selectedContent = document.getElementById(contentType + '-content');
+                if (selectedContent) {
+                    console.log("Found content section: ", selectedContent); // Debug
+                    selectedContent.style.display = 'block';
+                    selectedContent.classList.add('active');
+                } else {
+                    console.log("Content section not found for: " + contentType); // Debug
+                }
+
+                // Add active class to clicked tag
+                const clickedTag = document.querySelector(`.tag[onclick*="${contentType}"]`);
+                if (clickedTag) {
+                    clickedTag.classList.add('active');
+                }
+            }
+        </script>
+
+        <!-- Blog Section -->
+        <section class="blog">
+            <div class="container">
+                <h2>Latest Articles & Mental Health Insights</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2024/04/19/22/25/man-8707406_1280.png"
+                                class="img-fluid" alt="Stress reduction">
+                            <p>How to Reduce Stress in Your Daily Life</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="https://images.scalebranding.com/meditation-zen-logo-83d9550b-b2ca-4527-8dd9-2878d4476abc.jpg"
+                                class="img-fluid" alt="Meditation benefits">
+                            <p>The Power of Meditation for Mental Clarity</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="https://s.tmimgcdn.com/scr/800x500/167100/yoga-female-meditation-logo-template_167186-original.jpg"
+                                class="img-fluid" alt="Daily habits">
+                            <p>5 Daily Habits for Better Mental Wellness</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2018/06/web-20180625075758981911.png"
+                                class="img-fluid" alt="Understanding anxiety">
+                            <p>Understanding and Managing Anxiety</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="css12uavp">
+            <div class="background">
+                <div class="meditation-info">
+                    <div class="emoji-group">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">😌</span>
+                        <span class="emoji">🟣</span>
+                    </div>
+                    <span class="meditation-text">611.9k meditating</span>
+                </div>
+                <h1>Join the millions who <br> use Mind Heal every day</h1>
+                <button class="cta-button">Try for free</button>
+                <div class="stats">
+                    <div class="info-con">
+                        <img src="Images/rating.png" alt="5-star rating" class="stars">
+                        <span>App Store Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100M+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">450M+</span>
+                        <span class="stat-label">Minutes Meditated</span>
+                    </div>
+                    <div class="info-con">
+                        <div class="ekline">
+                            <img src="Images/apple.png" alt="Award" class="award-icon">
+                            <img src="Images/microsoft.png" alt="Award" class="award-icon">
+                            <img src="Images/google.png" alt="Award" class="award-icon">
+                        </div>
+                        <span>Selected Awards</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <style>
+            .css12uavp {
+                background: url('Images/sky.jpg') no-repeat center center/cover;
+                text-align: center;
+                padding: 50px 20px;
+                color: white;
+                font-family: Arial, sans-serif;
+                border-radius: 15px;
+            }
+
+            /* Tab Navigation Styles */
+            .tab-navigation {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+
+            .tab-container {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                margin-bottom: 40px;
+                flex-wrap: wrap;
+            }
+
+            .tab-button {
+                padding: 12px 24px;
+                border-radius: 100px;
+                border: none;
+                background: #FAF3F0;
+                color: #1A1A1A;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .tab-button:hover {
+                background: #e5e5e5;
+            }
+
+            .tab-button.active {
+                background: #1A1A1A;
+                color: white;
+            }
+
+            .tab-content {
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+                transition: all 0.3s ease;
+                display: none;
+                border-radius: 24px;
+                overflow: hidden;
+            }
+
+            .tab-content.active {
+                opacity: 1;
+                visibility: visible;
+                height: auto;
+                display: block;
+            }
+
+            /* Content Background Colors */
+            #guided-content .ai-support-container {
+                background: linear-gradient(135deg, #2B9BF4, #1a7fd1);
+            }
+
+            #ai-content .ai-support-container {
+                background: linear-gradient(135deg, #FFD700, #FFA500);
+            }
+
+            #sleep-content .ai-support-container {
+                background: linear-gradient(135deg, #5A2CA4, #4A1B8C);
+            }
+
+            #expert-content .ai-support-container {
+                background: linear-gradient(135deg, #00873C, #006B2E);
+            }
+
+            /* Chat Container Styles */
+            .ai-support-container {
+                display: grid;
+                grid-template-columns: 1.2fr 1fr;
+                gap: 40px;
+                padding: 64px;
+                border-radius: 24px;
+            }
+
+            .chat-container {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .chat-message {
+                display: flex;
+                gap: 12px;
+                align-items: flex-start;
+            }
+
+            .chat-bubble {
+                background: white;
+                padding: 16px 24px;
+                border-radius: 24px;
+                max-width: 80%;
+            }
+
+            .chat-bubble p {
+                margin: 0;
+                color: #1A1A1A;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .support-content {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .support-content h2 {
+                font-size: 48px;
+                line-height: 1.2;
+                margin: 0 0 24px 0;
+            }
+
+            .support-content p {
+                font-size: 20px;
+                line-height: 1.6;
+                margin: 0;
+                opacity: 0.9;
+            }
+
+            .chat-avatar {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 1024px) {
+                .ai-support-container {
+                    grid-template-columns: 1fr;
+                    padding: 40px;
+                }
+
+                .support-content {
+                    text-align: center;
+                }
+
+                .support-content h2 {
+                    font-size: 36px;
+                }
+
+                .support-content p {
+                    font-size: 18px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .tab-container {
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+
+                .tab-button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            /* Rest of existing styles */
+            .stats {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                margin-top: 20px;
+            }
+
+            .stat-number {
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            .stat-label {
+                display: block;
+                font-size: 14px;
+            }
+
+            .awards {
+                margin-top: 20px;
+            }
+
+            .stars,
+            .award-icon {
+                height: 30px;
+                margin: 5px;
+            }
+
+            .scene-container {
+                background: var(--scene-bg, #5A2CA4);
+                border-radius: 24px;
+                padding: 24px;
+                margin-bottom: 24px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .scene-title {
+                color: white;
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            .scene-illustration {
+                position: relative;
+                width: 100%;
+                height: 300px;
+                border-radius: 16px;
+                overflow: hidden;
+            }
+
+            .scene-illustration svg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .search-box {
+                position: absolute;
+                bottom: 24px;
+                left: 24px;
+                background: white;
+                padding: 12px 24px;
+                border-radius: 24px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .scene-label {
+                color: white;
+                font-size: 18px;
+                margin-top: 16px;
+            }
+
+            #guided-meditations-content .scene-container {
+                --scene-bg: #2B6CB0;
+            }
+
+            #ai-guidance-content .scene-container {
+                --scene-bg: #38A169;
+            }
+
+            #sleep-resources-content .scene-container {
+                --scene-bg: #5A2CA4;
+            }
+
+            #expert-led-programs-content .scene-container {
+                --scene-bg: #DD6B20;
+            }
+
+            .phone-interface {
+                background: var(--interface-bg, #0066FF);
+                border-radius: 24px;
+                padding: 24px;
+                height: 100%;
+            }
+
+            .phone-frame {
+                background: white;
+                border-radius: 24px;
+                padding: 16px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                max-width: 360px;
+                margin: 0 auto;
+            }
+
+            .phone-header {
+                margin-bottom: 16px;
+            }
+
+            .category-tabs {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+
+            .tab {
+                font-size: 14px;
+                color: #666;
+                padding: 4px 12px;
+                border-radius: 16px;
+                background: #f5f5f5;
+            }
+
+            .meditation-list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .meditation-item {
+                padding: 16px;
+                border-radius: 16px;
+                background: #f5f5f5;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+
+            .meditation-item:hover {
+                transform: translateY(-2px);
+            }
+
+            .meditation-item.podcast {
+                background: #FFD700;
+                color: black;
+            }
+
+            .meditation-item:nth-child(3) {
+                background: #4CAF50;
+                color: white;
+            }
+
+            .meditation-item:nth-child(4) {
+                background: #9C27B0;
+                color: white;
+            }
+
+            .meditation-item:nth-child(5) {
+                background: #FF5722;
+                color: white;
+            }
+
+            .item-icon {
+                font-size: 20px;
+            }
+
+            #guided-meditations-content .content-grid {
+                background: #0066FF;
+                border-radius: 24px;
+                overflow: hidden;
+            }
+
+            #guided-meditations-content .content-text {
+                color: white;
+                padding: 48px;
+            }
+
+            #guided-meditations-content .audio-player {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 16px;
+                padding: 16px;
+                margin: 24px 0;
+            }
+
+            #guided-meditations-content .explore-button {
+                background: white;
+                color: #0066FF;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 24px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            #ai-guidance-content .content-grid {
+                background: #FFE500;
+                border-radius: 24px;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+                min-height: 600px;
+            }
+
+            #ai-guidance-content .chat-interface {
+                padding: 48px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #ai-guidance-content .chat-messages {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                max-width: 440px;
+                position: relative;
+                z-index: 2;
+            }
+
+            #ai-guidance-content .chat-bubble {
+                background: white;
+                border-radius: 24px;
+                padding: 20px 24px;
+                position: relative;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            }
+
+            #ai-guidance-content .chat-bubble p {
+                margin: 0;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #1A1A1A;
+            }
+
+            #ai-guidance-content .user-avatar,
+            #ai-guidance-content .assistant-avatar {
+                display: inline-block;
+                margin-bottom: 8px;
+                font-weight: 500;
+                color: #1A1A1A;
+            }
+
+            #ai-guidance-content .meditation-card {
+                background: white;
+                border-radius: 16px;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            #ai-guidance-content .card-content {
+                display: flex;
+                align-items: center;
+                padding: 16px;
+                gap: 16px;
+            }
+
+            #ai-guidance-content .card-thumbnail {
+                width: 56px;
+                height: 56px;
+                border-radius: 12px;
+                background: #4A90E2;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #ai-guidance-content .card-info {
+                flex: 1;
+            }
+
+            #ai-guidance-content .card-info h4 {
+                margin: 0;
+                font-size: 16px;
+                font-weight: 600;
+                color: #1A1A1A;
+            }
+
+            #ai-guidance-content .card-info p {
+                margin: 4px 0 0;
+                font-size: 14px;
+                color: #666;
+            }
+
+            #ai-guidance-content .play-button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #1A1A1A;
+                border: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                flex-shrink: 0;
+            }
+
+            #ai-guidance-content .gradient-circle {
+                position: absolute;
+                bottom: -180px;
+                right: -120px;
+                width: 360px;
+                height: 360px;
+                background: linear-gradient(135deg, #FF6B6B 0%, #FFB88C 100%);
+                border-radius: 50%;
+                opacity: 0.9;
+                filter: blur(60px);
+                z-index: 1;
+            }
+
+            #ai-guidance-content .content-text {
+                padding: 64px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #ai-guidance-content .content-text h2 {
+                font-size: 48px;
+                line-height: 1.1;
+                font-weight: 700;
+                color: #1A1A1A;
+                margin: 0 0 24px 0;
+            }
+
+            #ai-guidance-content .content-text p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: #1A1A1A;
+                margin: 0;
+                max-width: 440px;
+            }
+
+            #ai-guidance-content .explore-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #1A1A1A;
+                color: white;
+                border: none;
+                padding: 16px 32px;
+                border-radius: 100px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 32px;
+                width: fit-content;
+            }
+
+            #sleep-resources-content .content-grid {
+                background: #2D1B54;
+                border-radius: 24px;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+                min-height: 600px;
+            }
+
+            #sleep-resources-content .sleep-interface {
+                padding: 48px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            #sleep-resources-content .scene-title {
+                color: white;
+                font-size: 24px;
+                margin: 0;
+                font-weight: 500;
+            }
+
+            #sleep-resources-content .scene-container {
+                position: relative;
+                background: #3D2A63;
+                border-radius: 24px;
+                aspect-ratio: 16/9;
+                overflow: hidden;
+            }
+
+            #sleep-resources-content .night-scene {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            #sleep-resources-content .moon {
+                position: absolute;
+                top: 20%;
+                right: 25%;
+                width: 40px;
+                height: 40px;
+                background: #FFD700;
+                border-radius: 50%;
+                filter: blur(4px);
+            }
+
+            #sleep-resources-content .stars {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: radial-gradient(circle at center, white 0.5px, transparent 1px);
+                background-size: 50px 50px;
+            }
+
+            #sleep-resources-content .search-box {
+                position: absolute;
+                bottom: 24px;
+                left: 24px;
+                background: white;
+                border-radius: 100px;
+                padding: 12px 24px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            #sleep-resources-content .search-box span {
+                color: #1A1A1A;
+                font-size: 16px;
+            }
+
+            #sleep-resources-content .story-card {
+                background: #3D2A63;
+                border-radius: 16px;
+                overflow: hidden;
+                display: flex;
+                gap: 16px;
+                padding: 16px;
+            }
+
+            #sleep-resources-content .story-image {
+                width: 80px;
+                height: 80px;
+                border-radius: 12px;
+                overflow: hidden;
+                background: #4B3575;
+            }
+
+            #sleep-resources-content .story-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #sleep-resources-content .story-info h4 {
+                color: white;
+                margin: 0;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            #sleep-resources-content .story-info p {
+                color: rgba(255, 255, 255, 0.7);
+                margin: 4px 0 0;
+                font-size: 14px;
+            }
+
+            #sleep-resources-content .content-text {
+                padding: 64px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #sleep-resources-content .content-text h2 {
+                font-size: 48px;
+                line-height: 1.1;
+                margin: 0 0 24px 0;
+            }
+
+            #sleep-resources-content .content-text p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin: 0;
+                opacity: 0.9;
+            }
+
+            #sleep-resources-content .audio-player {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 16px;
+                padding: 16px;
+                margin: 32px 0;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            #sleep-resources-content .play-button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: white;
+                border: none;
+                color: #2D1B54;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            #sleep-resources-content .player-info {
+                flex: 1;
+            }
+
+            #sleep-resources-content .progress-bar {
+                height: 4px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 2px;
+                margin: 8px 0;
+            }
+
+            #sleep-resources-content .progress {
+                width: 30%;
+                height: 100%;
+                background: white;
+                border-radius: 2px;
+            }
+
+            #sleep-resources-content .time {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                opacity: 0.7;
+            }
+
+            #sleep-resources-content .explore-button {
+                background: white;
+                color: #2D1B54;
+                border: none;
+                padding: 16px 32px;
+                border-radius: 100px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                width: fit-content;
+            }
+
+            #expert-led-programs-content .content-grid {
+                background: #008148;
+                border-radius: 24px;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1.2fr 1fr;
+                gap: 0;
+                min-height: 600px;
+            }
+
+            #expert-led-programs-content .expert-interface {
+                padding: 48px;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            #expert-led-programs-content .expert-screens {
+                position: relative;
+                width: 100%;
+                max-width: 600px;
+                display: flex;
+                justify-content: center;
+            }
+
+            /* Video Phone Frame */
+            #expert-led-programs-content .expert-profile {
+                background: #006238;
+                width: 280px;
+                border-radius: 32px;
+                overflow: hidden;
+                position: relative;
+                z-index: 2;
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+                border: 8px solid #004025;
+            }
+
+            #expert-led-programs-content .profile-video {
+                position: relative;
+                width: 100%;
+                height: 480px;
+                background: #004025;
+            }
+
+            #expert-led-programs-content .profile-video img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            #expert-led-programs-content .video-progress {
+                position: absolute;
+                bottom: 80px;
+                left: 24px;
+                right: 24px;
+                height: 4px;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 2px;
+            }
+
+            #expert-led-programs-content .video-progress .progress-bar {
+                width: 70%;
+                height: 100%;
+                background: white;
+                border-radius: 2px;
+            }
+
+            #expert-led-programs-content .timestamp {
+                position: absolute;
+                bottom: 88px;
+                right: 24px;
+                color: white;
+                font-size: 14px;
+            }
+
+            #expert-led-programs-content .profile-info {
+                padding: 24px;
+                color: white;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            }
+
+            #expert-led-programs-content .profile-info h3 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            #expert-led-programs-content .profile-info p {
+                margin: 4px 0 0;
+                font-size: 14px;
+                opacity: 0.8;
+            }
+
+            /* Yellow Card */
+            #expert-led-programs-content .needs-assessment {
+                background: #FFB800;
+                border-radius: 32px;
+                padding: 32px;
+                position: absolute;
+                width: 300px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-30%) rotate(6deg);
+                z-index: 1;
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            }
+
+            #expert-led-programs-content .assessment-header {
+                margin-bottom: 32px;
+            }
+
+            #expert-led-programs-content .sessions {
+                font-size: 14px;
+                color: #006238;
+                background: white;
+                padding: 6px 16px;
+                border-radius: 100px;
+                display: inline-block;
+            }
+
+            #expert-led-programs-content .assessment-header h3 {
+                color: #006238;
+                font-size: 32px;
+                margin: 16px 0 0;
+                font-weight: 700;
+            }
+
+            #expert-led-programs-content .assessment-question {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 24px;
+            }
+
+            #expert-led-programs-content .question-icon {
+                position: relative;
+                width: 120px;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #expert-led-programs-content .large-s {
+                font-size: 120px;
+                font-weight: 700;
+                color: #006238;
+                line-height: 1;
+            }
+
+            #expert-led-programs-content .decorations {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            #expert-led-programs-content .assessment-question p {
+                color: #006238;
+                font-size: 24px;
+                margin: 0;
+                line-height: 1.3;
+                font-weight: 500;
+            }
+
+            /* Right Content */
+            #expert-led-programs-content .content-text {
+                padding: 64px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #expert-led-programs-content .content-text h2 {
+                font-size: 48px;
+                line-height: 1.1;
+                margin: 0 0 24px 0;
+                font-weight: 700;
+            }
+
+            #expert-led-programs-content .content-text p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin: 0;
+                opacity: 0.9;
+                max-width: 440px;
+            }
+
+            #expert-led-programs-content .audio-player {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 16px;
+                padding: 16px;
+                margin: 32px 0;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            #expert-led-programs-content .play-button {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: white;
+                border: none;
+                color: #008148;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            #expert-led-programs-content .player-info {
+                flex: 1;
+            }
+
+            #expert-led-programs-content .player-info span {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            #expert-led-programs-content .progress-bar {
+                height: 4px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 2px;
+                margin-bottom: 8px;
+            }
+
+            #expert-led-programs-content .progress {
+                width: 30%;
+                height: 100%;
+                background: white;
+                border-radius: 2px;
+            }
+
+            #expert-led-programs-content .time {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                opacity: 0.7;
+            }
+
+            #expert-led-programs-content .explore-button {
+                background: white;
+                color: #008148;
+                border: none;
+                padding: 16px 32px;
+                border-radius: 100px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                width: fit-content;
+                margin-top: 16px;
+            }
+        </style>
+
+        <!-- FAQ Section -->
+        <section class="question">
+            <h2>Frequently asked questions</h2>
+            <div class="ques">
+                <p>What is MindHeal?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <hr>
+            <div class="ques">
+                <p>How does MindHeal work?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <hr>
+            <div class="ques">
+                <p>Is MindHeal suitable for beginners?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <hr>
+            <div class="ques">
+                <p>How much does MindHeal cost?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <hr>
+            <div class="ques">
+                <p>Can I use MindHeal for my team?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <hr>
+            <div class="ques">
+                <p>Is my data secure with MindHeal?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#blog">Mental Health Blog</a></li>
+                            <li><a href="#meditation">Guided Meditations</a></li>
+                            <li><a href="#therapy">Therapy Sessions</a></li>
+                            <li><a href="#community">Community Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for mental wellness tips and updates.</p>
+                        <input type="email" placeholder="Enter email" class="form-control">
+                        <button class="subscribe-btn">Subscribe now</button>
+                    </div>
+                </div>
+                <p>&copy; 2025 Mind Heal. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Add your React component -->
+    <script type="text/babel" src="FeatureCards.jsx"></script>
+
+    <!-- Initialize React component -->
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById('features-root'));
+        root.render(<FeatureCards />);
+    </script>
+
+    <style>
+        .youtube-player {
+            margin-top: 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 200px;
+            background: #f5f5f5;
+        }
+
+        .youtube-player iframe {
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+        }
+
+        #music-content .library-card {
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #music-content .library-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        #music-content .card-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #music-content .card-image .emoji,
+        #music-content .card-image .icon {
+            font-size: 48px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Sleep Content Styles */
+        #sleep-content .library-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(151, 71, 255, 0.1);
+        }
+
+        #sleep-content .library-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 24px rgba(151, 71, 255, 0.2);
+            border-color: #9747FF;
+        }
+
+        #sleep-content .card-image {
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+        }
+
+        #sleep-content .card-image .icon {
+            font-size: 52px;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+        }
+
+        #sleep-content h3 {
+            margin-top: 16px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #1a1a1a;
+            transition: color 0.3s ease;
+        }
+
+        #sleep-content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        #sleep-content .library-card:hover h3 {
+            color: #9747FF;
+        }
+
+        /* Sleep card click effect */
+        #sleep-content .card-clicked {
+            transform: scale(0.97);
+            box-shadow: 0 4px 8px rgba(151, 71, 255, 0.3);
+            transition: all 0.1s ease !important;
+        }
+
+        @media (max-width: 768px) {
+            #sleep-content .library-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            #sleep-content .library-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+
+    <script>
+        // Load YouTube API
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var players = {};
+
+        function onYouTubeIframeAPIReady() {
+            // Initialize players for each video
+            ['player-1', 'player-2', 'player-3', 'player-4'].forEach(function (playerId) {
+                players[playerId] = new YT.Player(playerId, {
+                    height: '200',
+                    width: '100%',
+                    videoId: '',
+                    playerVars: {
+                        'autoplay': 0,
+                        'controls': 1,
+                        'rel': 0
+                    }
+                });
+            });
+        }
+
+        function playVideo(videoId) {
+            // Stop all other players
+            Object.values(players).forEach(function (player) {
+                player.stopVideo();
+            });
+
+            // Play the clicked video
+            const clickedPlayer = Object.values(players).find(player =>
+                player.getVideoData().video_id !== videoId
+            );
+            if (clickedPlayer) {
+                clickedPlayer.loadVideoById(videoId);
+                clickedPlayer.playVideo();
+            }
+        }
+
+        // Update switchLibraryContent function to handle music section
+        function switchLibraryContent(contentType) {
+            // Remove active class from all tags
+            document.querySelectorAll('.tag').forEach(tag => tag.classList.remove('active'));
+
+            // Hide all content sections
+            document.querySelectorAll('.library-content').forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+
+            // Show the selected content
+            const selectedContent = document.getElementById(contentType + '-content');
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+                selectedContent.classList.add('active');
+            }
+
+            // Add active class to clicked tag
+            const clickedTag = document.querySelector(`.tag[onclick*="${contentType}"]`);
+            if (clickedTag) {
+                clickedTag.classList.add('active');
+            }
+
+            // Stop all videos when switching sections
+            if (typeof players !== 'undefined' && Object.keys(players).length > 0) {
+                Object.values(players).forEach(function (player) {
+                    if (player && typeof player.stopVideo === 'function') {
+                        player.stopVideo();
+                    }
+                });
+            }
+        }
+    </script>
+
+    <!-- Meditation and Mindfulness Content Section -->
+    <div id="meditation-content" class="library-content">
+        <div class="library-grid">
+            <div class="library-card new" onclick="playMeditationVideo('GXoErccq0vw')">
+                <div class="card-badge">New</div>
+                <div class="card-image" style="background: linear-gradient(45deg, #9333EA, #7C3AED);">
+                    <div class="emoji">🧘‍♀️</div>
+                </div>
+                <h3 style="color: #000;">Mindful Breathing</h3>
+                <p style="color: #000;">Guided breathing meditation for beginners</p>
+                <div class="youtube-player" id="meditation-player-1"></div>
+            </div>
+
+            <div class="library-card trending" onclick="playMeditationVideo('O-6f5wQXSu8')">
+                <div class="card-badge">Trending</div>
+                <div class="card-image" style="background: linear-gradient(45deg, #3B82F6, #2563EB);">
+                    <div class="icon">🌟</div>
+                </div>
+                <h3 style="color: #000;">Body Scan Meditation</h3>
+                <p style="color: #000;">Deep relaxation for mind and body</p>
+                <div class="youtube-player" id="meditation-player-2"></div>
+            </div>
+
+            <div class="library-card" onclick="playMeditationVideo('inpok4MKVLM')">
+                <div class="card-image" style="background: linear-gradient(45deg, #10B981, #059669);">
+                    <div class="icon">🌿</div>
+                </div>
+                <h3 style="color: #000;">Zen Garden Meditation</h3>
+                <p style="color: #000;">Peaceful meditation with nature sounds</p>
+                <div class="youtube-player" id="meditation-player-3"></div>
+            </div>
+
+            <div class="library-card new" onclick="playMeditationVideo('86m4RC_ADEY')">
+                <div class="card-badge">New</div>
+                <div class="card-image" style="background: linear-gradient(45deg, #F59E0B, #D97706);">
+                    <div class="icon">✨</div>
+                </div>
+                <h3 style="color: #000;">Mindfulness Journey</h3>
+                <p style="color: #000;">Guided mindfulness practice for clarity</p>
+                <div class="youtube-player" id="meditation-player-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Update the players object to include meditation players
+        function onYouTubeIframeAPIReady() {
+            // Initialize music players
+            ['player-1', 'player-2', 'player-3', 'player-4'].forEach(function (playerId) {
+                players[playerId] = new YT.Player(playerId, {
+                    height: '200',
+                    width: '100%',
+                    videoId: '',
+                    playerVars: {
+                        'autoplay': 0,
+                        'controls': 1,
+                        'rel': 0
+                    }
+                });
+            });
+
+            // Initialize meditation players
+            ['meditation-player-1', 'meditation-player-2', 'meditation-player-3', 'meditation-player-4'].forEach(function (playerId) {
+                players[playerId] = new YT.Player(playerId, {
+                    height: '200',
+                    width: '100%',
+                    videoId: '',
+                    playerVars: {
+                        'autoplay': 0,
+                        'controls': 1,
+                        'rel': 0
+                    }
+                });
+            });
+        }
+
+        function playMeditationVideo(videoId) {
+            // Stop all other players
+            Object.values(players).forEach(function (player) {
+                player.stopVideo();
+            });
+
+            // Play the clicked video
+            const clickedPlayer = Object.values(players).find(player =>
+                player.getVideoData().video_id !== videoId
+            );
+            if (clickedPlayer) {
+                clickedPlayer.loadVideoById(videoId);
+                clickedPlayer.playVideo();
+            }
+        }
+
+        // Update switchLibraryContent function to handle meditation section
+        function switchLibraryContent(contentType) {
+            // Remove active class from all tags
+            document.querySelectorAll('.tag').forEach(tag => tag.classList.remove('active'));
+
+            // Hide all content sections
+            document.querySelectorAll('.library-content').forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+
+            // Show the selected content
+            const selectedContent = document.getElementById(contentType + '-content');
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+                selectedContent.classList.add('active');
+            }
+
+            // Add active class to clicked tag
+            const clickedTag = document.querySelector(`.tag[onclick*="${contentType}"]`);
+            if (clickedTag) {
+                clickedTag.classList.add('active');
+            }
+
+            // Stop all videos when switching sections
+            if (typeof players !== 'undefined' && Object.keys(players).length > 0) {
+                Object.values(players).forEach(function (player) {
+                    if (player && typeof player.stopVideo === 'function') {
+                        player.stopVideo();
+                    }
+                });
+            }
+        }
+    </script>
+
+    <style>
+        #meditation-content .library-card {
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #meditation-content .library-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        #meditation-content .card-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #meditation-content .card-image .emoji,
+        #meditation-content .card-image .icon {
+            font-size: 48px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+        }
+    </style>
+
+    <!-- Add JavaScript for the Sleep button click effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sleepButton = document.getElementById('sleepLibraryButton');
+            if (sleepButton) {
+                sleepButton.addEventListener('click', function () {
+                    // Add visual effect to the button
+                    this.classList.add('active');
+                    this.classList.add('tag-clicked');
+
+                    // Remove active class from other buttons
+                    document.querySelectorAll('.tag').forEach(tag => {
+                        if (tag !== this) {
+                            tag.classList.remove('active');
+                        }
+                    });
+
+                    // Hide all other content
+                    document.querySelectorAll('.library-content').forEach(content => {
+                        content.style.display = 'none';
+                        content.classList.remove('active');
+                    });
+
+                    // Show sleep content with animation
+                    const sleepContent = document.getElementById('sleep-content');
+                    if (sleepContent) {
+                        sleepContent.style.display = 'block';
+                        sleepContent.classList.add('active');
+                        sleepContent.classList.add('content-fade-in');
+
+                        // Scroll to sleep content
+                        sleepContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                        // Add animation to each card
+                        const cards = sleepContent.querySelectorAll('.library-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('card-appear');
+                            }, 100 * index); // Stagger the animations
+                        });
+                    }
+
+                    // Remove click effect after animation
+                    setTimeout(() => {
+                        this.classList.remove('tag-clicked');
+                    }, 300);
+                });
+            }
+        });
+    </script>
+
+    <style>
+        /* Enhanced animations for sleep content */
+        .content-fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .card-appear {
+            animation: popIn 0.4s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            70% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        #sleep-content .library-card {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+    </style>
+</body>
+
+</html>

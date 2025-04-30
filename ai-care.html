@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Care - Mind Heal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ai-care.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Websitelogo.jpg"> <span style="font-weight: 500;">Mind Heal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Article.html">Articles & Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sleep.html">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ai-care.html">AI-Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mood.html">Mood Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+                </ul>
+                <a href="#try" class="btn btn-primary">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="ai-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Your Personal AI Mental Health Companion</h1>
+                    <p>Experience 24/7 support, personalized guidance, and evidence-based mental health care powered by advanced AI technology.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <span>Emotionally Intelligent AI</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacy-First Approach</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Personalized Insights</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg start-chat-btn">
+                        <i class="fas fa-comments"></i> Start Chat
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-illustration">
+                        <lottie-player 
+                            src="https://assets9.lottiefiles.com/packages/lf20_M9p23l.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 400px"
+                            loop
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Interface -->
+    <section class="ai-chat-interface" id="chat-interface">
+        <div class="container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="ai-avatar">
+                        <img src="Images/brain.png" alt="AI Avatar">
+                        <span class="status-indicator"></span>
+                    </div>
+                    <h3>Mind Heal AI</h3>
+                    <p>Always here to listen and support you</p>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            <p>Hello! I'm your AI mental health companion. I'm here to listen, support, and guide you through your mental wellness journey. How are you feeling today?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="mood-selector">
+                        <button class="mood-btn" data-mood="happy"><i class="fas fa-smile"></i></button>
+                        <button class="mood-btn" data-mood="neutral"><i class="fas fa-meh"></i></button>
+                        <button class="mood-btn" data-mood="sad"><i class="fas fa-frown"></i></button>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
+                        <button id="voiceInputBtn" class="voice-input-btn" title="Voice Input">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <button id="send-btn" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="ai-features">
+        <div class="container">
+            <h2>How AI-Care Supports Your Mental Health</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Access emotional support and guidance whenever you need it, day or night.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Emotional Intelligence</h3>
+                        <p>Our AI understands and responds to your emotions with empathy and care.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Personalized Insights</h3>
+                        <p>Get tailored recommendations based on your unique needs and patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="ai-resources">
+        <div class="container">
+            <h2>AI-Powered Mental Health Resources</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resource-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Guided Self-Help</h3>
+                        <p>Access evidence-based techniques and exercises tailored to your needs.</p>
+                        <button class="btn btn-outline-primary">Explore Resources</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="resource-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your mental health journey with AI-powered insights and analytics.</p>
+                        <button class="btn btn-outline-primary">View Progress</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Privacy -->
+    <section class="safety-privacy">
+        <div class="container">
+            <h2>Your Safety & Privacy</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="safety-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>End-to-End Encryption</h3>
+                        <p>All conversations are encrypted and protected by advanced security measures.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="safety-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Anonymous Support</h3>
+                        <p>Chat anonymously without sharing personal information unless you choose to.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Mental Health Blog</a></li>
+                        <li><a href="meditation.html">Guided Meditations</a></li>
+                        <li><a href="#therapy">Therapy Sessions</a></li>
+                        <li><a href="#community">Community Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for mental wellness tips and updates.</p>
+                    <input type="email" placeholder="Enter email" class="form-control">
+                    <button class="subscribe-btn">Subscribe now</button>
+                </div>
+            </div>
+            <p>&copy; 2025 Mind Heal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="ai-care.js"></script>
+</body>
+</html> 
